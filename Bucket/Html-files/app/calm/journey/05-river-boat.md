@@ -1,10 +1,10 @@
-# قایق روی رودخانه — راهنمای تولید صدا، بک‌گراند و رنگ‌بندی (MD)
+# # قایق روی رودخانه — راهنمای تولید صوت
 
-- فایل HTML: `05-river-boat.html` | شناسه: `cj-05` | مسیر: `Bucket/Html-files/app/calm/journey/05-river-boat.html`
-- تعداد فایل صوتی: ۶ (هر بخش یک فایل) | مدت کل با مکث‌ها (سرعت ۱٫۳×): حدود ۲۲ دقیقه
-- مخاطب: «تو» (مفرد) با افعال محاوره‌ای. صفحه‌ی HTML پیوسته و همراه‌صدا است: بدون آکاردئون، بدون عنوان بخش، بدون متن اضافه.
+- فایل HTML مرتبط: `05-river-boat.html` | شناسه: `cj-05`
+- خروجی: ۶ فایل MP3 مونو، هر بخش یک فایل، با کیفیت ۶۴ تا ۹۶ kbps؛ نام‌گذاری از `05-river-boat-01.mp3` تا `05-river-boat-06.mp3`.
+- مدت تقریبی کل، همراه مکث‌ها و با سرعت ۱٫۳×: حدود ۲۲ دقیقه.
 
-## ۱) خوانش: لحن، سرعت و مکث‌ها (اول این را بخوان)
+## راهنمای خوانش و مکث‌ها
 
 - **لحن کلی:** روان و کشیده، مثل یه جریان آروم؛ گرم و کمی مه‌آلود. محاوره‌ای، نه رسمی، نه نمایشی. تُن پایین و یکدست. جمله‌های بلندتر از معمول و بینشون سکوت، مثل وقتی قایق بین دو موج راه می‌ره.
 - **سبک گفتار:** محاوره‌ای مفرد (می‌تونی، بذار، بریم، می‌شه، نمی‌خواد، اگه، یه). متن رو مثل حرف زدن بخون.
@@ -14,59 +14,9 @@
 - **آهنگ:** تخت نخون؛ پایان جمله‌ی دستوری کمی پایین. «جریان»، «آب»، «می‌ره» کمی کشیده‌تر.
 - **خروجی صوتی:** برای هر بخش یک MP3 مونو، ۶۴ تا ۹۶ kbps. نام‌گذاری `05-river-boat-01.mp3` تا `05-river-boat-06.mp3`. خط «لحن» و عنوان بخش‌ها خونده نمی‌شن.
 
-## ۲) ترکیب رنگی گوی و کنترل‌ها
+## متن گفتاری شش‌بخشی
 
-- **عنوان ترکیب رنگی:** «فیروزه‌ای رودخانه و طلایی غروب»
-- **نسخه‌ی روشن:** صفحه #EDF6F8 → #ECE0CA | گوی قطره‌ای (drops): دایره‌ی شفاف با مرکز #238695 ۳۰٪ و حلقه‌ی بیرونی #238695، هاله‌ی #C78B23 کم‌رنگ | دکمه‌ی پخش: گرادیان #C78B23 → #238695 با آیکون سفید | نوار پیشرفت: #C78B23 → #238695 | متن: #1B373C | پنل کنترل: شیشه‌ی سفید ۵۵٪
-- **نسخه‌ی تاریک:** صفحه #0A181A → #392B13 | گوی قطره‌ای: مرکز #65DAEC ۳۰٪، حلقه #65DAEC، هاله #F2BC5F | دکمه‌ی پخش: گرادیان #F2BC5F → #65DAEC با آیکون سفید | نوار پیشرفت: #F2BC5F → #65DAEC | متن: #E4EFF1 | پنل کنترل: شیشه‌ی مشکی ۲۸٪
-- **نوع گوی:** قطره (drops) که با نفس ۹ ثانیه‌ای حلقه‌هاش مثل موج پخش می‌شن. **ذرات صفحه:** موج + مه.
-
-## ۳) پرامپت بک‌گراند (دقیق و کامل)
-
-دو تصویر لازمه: نسخه‌ی روشن و تاریک. روی هر تصویر لایه‌ی محو رنگی خودکار می‌افته تا کنترل‌ها خوانا بمونن.
-
-### پرامپت نسخه‌ی روشن (انگلیسی؛ برای Midjourney / Flux / SDXL / Imagen)
-
-```text
-A calm wide river at golden hour, seen from the low bow of a small empty wooden rowing boat at water level. Slow glassy water reflects a peach and pale gold sky, gentle concentric ripples, low green banks with weeping willows trailing branches near the water, light mist floating on the surface, a few fallen leaves drifting on the current. Soft warm light, airy, high-key, photographic with gentle film softness. Palette: #EDF6F8, #ECE0CA, #238695, #C78B23. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% (30 to 70% of the height) soft, low-detail and low-contrast for a glowing orb, so the horizon and banks sit in the upper third and the boat bow stays low and dark in the bottom corner; keep the bottom 35% calm and slightly darker for a control panel. Gentle contrast, no bright hotspots, comfortable for hour-long viewing. No text, logos, watermark, people, faces, hands, foreground animals, motor boats, buildings, cars or UI elements.
-```
-
-### پرامپت نسخه‌ی تاریک
-
-```text
-The same river at deep blue dusk after sunset. Glassy dark teal water mirroring a thin amber afterglow band at the horizon, willows as soft dark silhouettes, low drifting mist glowing faintly, a few faint stars high above, the small wooden boat bow barely visible. Very low-key, quiet, soft contrast, photographic. Palette: #0A181A, #392B13, #65DAEC, #F2BC5F. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% soft, low-detail and low-contrast for a glowing orb; keep the bottom 35% calm and darker for a control panel; interest in the top third and margins. No bright hotspots. No text, logos, watermark, people, faces, hands, foreground animals, motor boats, buildings, cars or UI elements.
-```
-
-### پرامپت منفی (هر دو نسخه)
-
-```text
-text, letters, watermark, logo, signature, people, face, hands, animals in foreground, motor boats, buildings, cars, harsh contrast, oversaturated colors, neon, HDR halo, lens flare, chromatic aberration, noisy grain, border, frame, cartoon, illustration, 3D render look, clutter, rapids, waterfalls, stormy water
-```
-
-### مشخصات خروجی و نسخه‌ی ویدیویی اختیاری
-
-- دو فایل `05-river-boat-bg-light.webp` و `05-river-boat-bg-dark.webp`، ۱۰۸۰×۱۹۲۰، کیفیت ۷۰ تا ۸۰، حداکثر حدود ۱۵۰ تا ۲۰۰ کیلوبایت هر کدوم. ترکیب‌بندی هر دو یکسان باشه.
-- لوپ ویدیویی (فعلاً در صفحه پشتیبانی نمی‌شه): `Seamless loop of 8 to 10 seconds: the water surface drifts very slowly from right to left as if the boat glides, a few leaves float past, mist drifts, willow branches sway faintly. Camera locked off, 9:16, 1080x1920, 24 fps, MP4 under 1.5 MB, no audio.`
-
-## ۴) تزریق صدا و بک‌گراند به HTML
-
-```python
-import base64, json, re, glob
-n = '05-river-boat'
-h = open(n + '.html', encoding='utf-8').read()
-uris = ['data:audio/mpeg;base64,' + base64.b64encode(open(f, 'rb').read()).decode() for f in sorted(glob.glob(n + '-0*.mp3'))]
-h = re.sub(r'AUDIO=\[.*?\];', lambda m: 'AUDIO=' + json.dumps(uris) + ';', h, count=1, flags=re.S)
-img = lambda p: 'data:image/webp;base64,' + base64.b64encode(open(p, 'rb').read()).decode()
-bg = 'const BG={light:"' + img(n + '-bg-light.webp') + '",dark:"' + img(n + '-bg-dark.webp') + '"};'
-h = re.sub(r'const BG=\{.*?\};', lambda m: bg, h, count=1, flags=re.S)
-open(n + '.html', 'w', encoding='utf-8').write(h)
-```
-
-تعداد MP3 باید ۶ باشه و ترتیبشون با ترتیب بخش‌ها یکی. تم صفحه خودکار تاریک/روشن می‌شه؛ اگه وب‌ویو تم رو نمی‌رسونه: `setTheme('dark')` یا `setTheme('light')`.
-
-## ۵) متن بخش‌ها برای تولید صدا
-
-> هر بخش یک فایل صوتی. خط «لحن» فقط برای تنظیم خوانشه و خونده نمی‌شه.
+> هر بخش یک فایل صوتی است. عنوان و خط «لحن» راهنمای خواننده‌اند و خوانده نمی‌شوند.
 
 ### بخش ۱: پیش از شروع، جا گرفتن
 
@@ -82,7 +32,7 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 حالا یه جای راحت پیدا کن. اگه نشستی، کمرت رو به صندلی بده و کف پاهات رو روی زمین بذار. اگه دراز کشیدی، یه بالش کوچیک زیر زانوهات بذار. **[مکث ۴ ثانیه]**
 
-چشم‌هات رو آروم ببند، یا نگاهت رو یه جای پایین نرم کن. **[مکث ۵ ثانیه]**
+اگه راحتی، چشم‌هات رو ببند؛ وگرنه نگاهت رو روی یه نقطه‌ی ساده از زمین یا میز نگه دار. **[مکث ۵ ثانیه]**
 
 کف دست‌هات رو به همون جایی که هستن رها کن. بازوهات از شونه آویزون باشن. **[مکث ۴ ثانیه]**
 
@@ -218,19 +168,10 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 انگشت‌های دست و پا رو یه کم تکون بده. **[مکث ۴ ثانیه]** شونه‌ها رو آروم بچرخون. **[مکث ۴ ثانیه]** اگه دوست داری، یه کش و قوس به بدنت بده. **[مکث ۶ ثانیه]**
 
-به صداهای واقعی اتاق گوش کن. **[مکث ۴ ثانیه]** هر وقت آماده بودی، چشم‌هات رو باز کن. اگه هنوز بازن، نگاهت رو به اتاق برگردون. **[مکث ۶ ثانیه]**
+به صداهای واقعی اتاق گوش بده. **[مکث ۴ ثانیه]** هر وقت آماده بودی، چشم‌هات رو باز کن. اگه هنوز بازن، نگاهت رو به اتاق برگردون. **[مکث ۶ ثانیه]**
 
 یه چیز کوچیک برای بعد: توی روزهای شلوغ، همین‌قدر که یه فکر مزاحم داشتی، بهش بگو «برگ» و نفس بکش، یه مدت از اون فاصله گرفته‌ای. **[مکث ۵ ثانیه]**
 
-ممنون که من رو تو این قایق همراهی کردی. **[مکث ۳ ثانیه]**
+ممنون که این مسیر رو با من اومدی. **[مکث ۳ ثانیه]**
 
-روز خوبی داشته باشی. **[مکث ۳ ثانیه]**
-
-## ۶) یادداشت ایمنی و منابع علمی (برای اپ؛ داخل صفحه‌ی صوتی نمایش داده نمی‌شه)
-
-- **ایمنی:** این تمرین رو موقع رانندگی یا کار با ماشین‌آلات گوش نده. اگه وسط تمرین تصویر ناخوشایندی اومد، چشم‌هات رو باز کن، به اتاق واقعی نگاه کن و هر وقت خواستی ادامه بده یا متوقف کن. اگه از آب یا قایق ترس یا خاطره‌ی بدی داری، به‌جای قایق فقط کنار رود بنشین و برگ‌ها رو تماشا کن. این تمرین جایگزین درمان نیست.
-- Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (1999). Acceptance and Commitment Therapy: An Experiential Approach to Behavior Change. Guilford Press. (تمرین «برگ‌ها روی آب» و دیفیوژن)
-- White, M., Smith, A., Humphryes, K., Pahl, S., Snelling, D., & Depledge, M. (2010). Blue space: The importance of water for preference, affect, and restorativeness ratings of natural and built scenes. Journal of Environmental Psychology, 30(4), 482–493.
-- Gascon, M., Zijlema, W., Vert, C., White, M. P., & Nieuwenhuijsen, M. J. (2017). Outdoor blue spaces, human health and well-being: A systematic review of quantitative studies. International Journal of Hygiene and Environmental Health, 220(8), 1207–1221.
-- Zaccaro, A., et al. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.
-- NCCIH (NIH). Relaxation Techniques: What You Need To Know. https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
+امیدوارم ادامه‌ی روزت آروم بگذره. **[مکث ۳ ثانیه]**
