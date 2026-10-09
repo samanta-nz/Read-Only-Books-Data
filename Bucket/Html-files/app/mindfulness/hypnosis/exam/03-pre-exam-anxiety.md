@@ -3,6 +3,7 @@
 - **شناسه:** `mh-exam-03`
 - **دسته:** `mindfulness/hypnosis/exam`
 - **فایل HTML متناظر:** `03-pre-exam-anxiety.html`
+- **نقش HTML:** فقط تصویرسازی‌های ذهنی و عناصر بصری؛ متن گفتاری روی HTML نمایش داده نمی‌شود. متن زیر برای گوینده و تولید فایل صوتی است.
 - **وضعیت:** متن گفتاری کامل؛ محتوای مستقل و تازه‌نگارش‌شده بر پایه‌ی اصول آرام‌سازی، توجه‌آگاهی و مهارت‌های رفتاری.
 - **مدت تقریبی کل:** ۷ تا ۹ دقیقه، بسته به سرعت خوانش و طول مکث‌ها.
 - **تقسیم‌بندی صوت:** ۶ فایل MP3، مطابق شش بخش زیر؛ نام‌گذاری از `03-pre-exam-anxiety-01.mp3` تا `03-pre-exam-anxiety-06.mp3`.
@@ -87,11 +88,16 @@
 
 این متن برای تمرین خودیاری و آموزش مهارت نوشته شده است؛ نه برای تشخیص یا درمان. شواهد مربوط به هیپنوتیزم به نوع مشکل و شیوه‌ی اجرا وابسته‌اند و برای همه‌ی کاربردها نتیجه‌ی قطعی نشان نمی‌دهند. تمرین‌ها بر آگاهی از لحظه‌ی حاضر، تنفس راحت، تصویرسازی اختیاری و گام‌های عملی تکیه دارند؛ قرار نیست نتیجه‌ی امتحان، رفتار دیگران یا احساسات را تضمین کنند.
 
-## منابع
+## منابع و مبنای طراحی
 
-- Smith, M. A., et al. (2016). Retrieval practice protects memory against acute stress. *Science*. https://pubmed.ncbi.nlm.nih.gov/27885031/
-- Moran, T. P. (2016). Anxiety and working memory capacity: A meta-analysis and narrative review. *Psychological Bulletin*. https://pubmed.ncbi.nlm.nih.gov/26963369/
-- The Learning Scientists, “Retrieval Practice”: https://www.learningscientists.org/
-- National Center for Complementary and Integrative Health (NCCIH), “Hypnosis”: https://www.nccih.nih.gov/health/hypnosis
+این منابع برای انتخاب و بررسی اصول تمرین استفاده شده‌اند؛ متن فارسی زیر بازنویسی مستقل است و نقل‌قول یا ترجمه‌ی مستقیم مقاله‌ها نیست. همبستگی یا اثر گزارش‌شده در یک مطالعه به معنی تضمین نتیجه برای هر شنونده نیست.
+
+- Huntley, C. D., et al. (2019). The efficacy of interventions for test-anxious university students: A meta-analysis of randomized controlled trials. https://pubmed.ncbi.nlm.nih.gov/30826687/
+- Zaccaro, A., et al. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. https://pubmed.ncbi.nlm.nih.gov/29209423/
+- Moran, T. P. (2016). Anxiety and working memory capacity: A meta-analysis and narrative review. https://pubmed.ncbi.nlm.nih.gov/26963369/
+
+### منابع عمومی و ملاحظات ایمنی
+
+- National Center for Complementary and Integrative Health (NCCIH), “Hypnosis” — شواهد هیپنوتیزم به موضوع وابسته‌اند و برای بسیاری از کاربردها قطعی نیستند: https://www.nccih.nih.gov/health/hypnosis
+- NCCIH, “Relaxation Techniques: What You Need To Know”: https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
 - NHS, “Breathing exercises for stress”: https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/
-- NCCIH, “Anxiety and Complementary Health Approaches”: https://www.nccih.nih.gov/health/anxiety-and-complementary-health-approaches
