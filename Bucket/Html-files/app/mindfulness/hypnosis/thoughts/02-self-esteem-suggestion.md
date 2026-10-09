@@ -3,6 +3,7 @@
 - **شناسه:** `mh-thoughts-02`
 - **دسته:** `mindfulness/hypnosis/thoughts`
 - **فایل HTML متناظر:** `02-self-esteem-suggestion.html`
+- **نقش HTML:** فقط تصویرسازی‌های ذهنی و عناصر بصری؛ متن گفتاری روی HTML نمایش داده نمی‌شود. متن زیر برای گوینده و تولید فایل صوتی است.
 - **وضعیت:** متن گفتاری کامل و مستقل، نوشته‌شده با تمرکز بر مهارت‌های قابل تمرین و زبان محاوره‌ای.
 - **مدت تقریبی:** ۷ تا ۹ دقیقه با احتساب مکث‌ها.
 - **تقسیم صوت:** شش فایل؛ `02-self-esteem-suggestion-01.mp3` تا `02-self-esteem-suggestion-06.mp3`.
@@ -84,10 +85,16 @@
 ## یادداشت علمی و دامنه‌ی استفاده
 این فایل برای تمرین خودیاری و آموزش مهارت است و جایگزین تشخیص یا درمان نیست. شواهد هیپنوتیزم بسته به موضوع و شیوه‌ی اجرا متفاوت است و برای همه‌ی کاربردها نتیجه‌ی قطعی نشان نمی‌دهد. تمرین حاضر وعده‌ی تغییر فوری احساسات، رفتار دیگران یا نتیجه‌ی بیرونی نمی‌دهد؛ هدف آن تقویت توجه و آماده‌سازی برای گام‌های واقعی است.
 
-## منابع
-- Han, A. & Kim, T. H. (2023). Effects of self-compassion interventions on reducing depressive symptoms, anxiety, and stress: A meta-analysis. *Mindfulness*. https://pubmed.ncbi.nlm.nih.gov/37362192/
-- Centre for Clinical Interventions (CCI), “Worry and Rumination”: https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Worry-and-Rumination
-- NCCIH, “Hypnosis”: https://www.nccih.nih.gov/health/hypnosis
-- NCCIH, “Hypnosis”: https://www.nccih.nih.gov/health/hypnosis
+## منابع و مبنای طراحی
+
+این منابع برای انتخاب و بررسی اصول تمرین استفاده شده‌اند؛ متن فارسی زیر بازنویسی مستقل است و نقل‌قول یا ترجمه‌ی مستقیم مقاله‌ها نیست. همبستگی یا اثر گزارش‌شده در یک مطالعه به معنی تضمین نتیجه برای هر شنونده نیست.
+
+- Han, A., & Kim, T. H. (2023). Effects of self-compassion interventions on reducing depressive symptoms, anxiety, and stress: A meta-analysis. *Mindfulness*. https://pubmed.ncbi.nlm.nih.gov/37362192/
+- Centre for Clinical Interventions (CCI), depression self-help resources including self-talk and thinking patterns: https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Depression
+- NCCIH, relaxation techniques: https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
+
+### منابع عمومی و ملاحظات ایمنی
+
+- National Center for Complementary and Integrative Health (NCCIH), “Hypnosis” — شواهد هیپنوتیزم به موضوع وابسته‌اند و برای بسیاری از کاربردها قطعی نیستند: https://www.nccih.nih.gov/health/hypnosis
+- NCCIH, “Relaxation Techniques: What You Need To Know”: https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
 - NHS, “Breathing exercises for stress”: https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/
-- NCCIH, “Anxiety and Complementary Health Approaches”: https://www.nccih.nih.gov/health/anxiety-and-complementary-health-approaches
