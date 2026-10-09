@@ -3,6 +3,7 @@
 - **شناسه:** `mh-social-01`
 - **دسته:** `mindfulness/hypnosis/social`
 - **فایل HTML متناظر:** `01-calm-before-hard-talk.html`
+- **نقش HTML:** فقط تصویرسازی‌های ذهنی و عناصر بصری؛ متن گفتاری روی HTML نمایش داده نمی‌شود. متن زیر برای گوینده و تولید فایل صوتی است.
 - **وضعیت:** متن گفتاری کامل؛ محتوای مستقل و تازه‌نگارش‌شده بر پایه‌ی اصول آرام‌سازی، توجه‌آگاهی و مهارت‌های رفتاری.
 - **مدت تقریبی کل:** ۷ تا ۹ دقیقه، بسته به سرعت خوانش و طول مکث‌ها.
 - **تقسیم‌بندی صوت:** ۶ فایل MP3، مطابق شش بخش زیر؛ نام‌گذاری از `01-calm-before-hard-talk-01.mp3` تا `01-calm-before-hard-talk-06.mp3`.
@@ -87,10 +88,16 @@
 
 این متن برای تمرین خودیاری و آموزش مهارت نوشته شده است؛ نه برای تشخیص یا درمان. شواهد مربوط به هیپنوتیزم به نوع مشکل و شیوه‌ی اجرا وابسته‌اند و برای همه‌ی کاربردها نتیجه‌ی قطعی نشان نمی‌دهند. تمرین‌ها بر آگاهی از لحظه‌ی حاضر، تنفس راحت، تصویرسازی اختیاری و گام‌های عملی تکیه دارند؛ قرار نیست نتیجه‌ی امتحان، رفتار دیگران یا احساسات را تضمین کنند.
 
-## منابع
+## منابع و مبنای طراحی
 
+این منابع برای انتخاب و بررسی اصول تمرین استفاده شده‌اند؛ متن فارسی زیر بازنویسی مستقل است و نقل‌قول یا ترجمه‌ی مستقیم مقاله‌ها نیست. همبستگی یا اثر گزارش‌شده در یک مطالعه به معنی تضمین نتیجه برای هر شنونده نیست.
+
+- Omura, M., et al. (2017). The effectiveness of assertiveness communication training programs: A systematic review. *International Journal of Nursing Studies*. https://pubmed.ncbi.nlm.nih.gov/28964979/ (پژوهش روی متخصصان و دانشجویان حوزه سلامت است؛ تعمیم به همه‌ی موقعیت‌ها باید با احتیاط باشد.)
+- Centre for Clinical Interventions (CCI), Social Anxiety self-help resources: https://www.cci.health.wa.gov.au/Home/Resources/Looking-After-Yourself/Social-Anxiety
+- NHS, breathing exercises for stress: https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/
+
+### منابع عمومی و ملاحظات ایمنی
+
+- National Center for Complementary and Integrative Health (NCCIH), “Hypnosis” — شواهد هیپنوتیزم به موضوع وابسته‌اند و برای بسیاری از کاربردها قطعی نیستند: https://www.nccih.nih.gov/health/hypnosis
+- NCCIH, “Relaxation Techniques: What You Need To Know”: https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
 - NHS, “Breathing exercises for stress”: https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/
-- Centre for Clinical Interventions (CCI), “Worry and Rumination”: https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Worry-and-Rumination
-- National Center for Complementary and Integrative Health (NCCIH), “Hypnosis”: https://www.nccih.nih.gov/health/hypnosis
-- NHS, “Breathing exercises for stress”: https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/
-- NCCIH, “Anxiety and Complementary Health Approaches”: https://www.nccih.nih.gov/health/anxiety-and-complementary-health-approaches
