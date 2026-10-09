@@ -5,59 +5,53 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#101522">
-<!-- key: 01-calm-entry-to-exam | app id: mh-exam-01 | audience: all | parts: 6 | audio: pending -->
+<meta name="description" content="">
+<!-- key: 01-calm-entry-to-exam | app id: mh-exam-01 | visual-only | no narration text -->
 <title>ورود آرام به جلسه</title>
 <style>
-:root{color-scheme:dark;--bg:#101522;--panel:rgba(25,33,49,.9);--fg:#edf1f8;--muted:#b4bfd0;--accent:#91b9e8;--line:rgba(255,255,255,.12)}
+:root{color-scheme:dark;--bg:#101522;--a:#91b9e8;--b:#8c9fe8;--c:#75d7c4}
 *{box-sizing:border-box}
-body{margin:0;min-height:100svh;padding:max(16px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) max(22px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));background:radial-gradient(ellipse at 85% 0%,#26354c 0%,transparent 55%),var(--bg);color:var(--fg);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.9}
-.page{width:min(100%,760px);margin:auto;display:flex;flex-direction:column;gap:16px}
-header,main,footer,.card{width:100%}
-header{padding:10px 2px 2px}
-.eyebrow{color:var(--accent);font-size:.86rem;margin:0 0 4px}
-h1{font-size:clamp(1.5rem,5vw,2.15rem);line-height:1.5;margin:0}
-.subtitle{color:var(--muted);margin:8px 0 0}
-.card{border:1px solid var(--line);background:var(--panel);border-radius:20px;padding:clamp(16px,4vw,24px)}
-h2{font-size:1.12rem;margin:0 0 8px}
-p{margin:8px 0}
-.muted{color:var(--muted);font-size:.94rem}
-.parts{display:grid;gap:10px;margin-top:14px}
-.part{border:1px solid var(--line);border-radius:14px;padding:14px}
-.part h3{font-size:1rem;margin:0 0 5px}
-.status{display:inline-block;color:var(--accent);font-size:.85rem}
-footer{color:var(--muted);font-size:.88rem;padding:8px 2px 16px}
-@media(min-width:620px){.parts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+html,body{margin:0;min-height:100%;background:var(--bg)}
+body{min-height:100svh;overflow:hidden}
+.scene{position:relative;isolation:isolate;min-height:100svh;overflow:hidden;background:radial-gradient(ellipse at 50% 38%,#263650 0%,#172236 42%,#101522 78%)}
+.haze{position:absolute;inset:-15%;background:radial-gradient(ellipse at 28% 64%,rgba(93,151,191,.12),transparent 34%),radial-gradient(ellipse at 76% 26%,rgba(139,126,205,.13),transparent 38%);filter:blur(22px);animation:drift 18s ease-in-out infinite alternate}
+.orbit{position:absolute;left:50%;top:45%;width:min(72vw,440px);aspect-ratio:1;transform:translate(-50%,-50%);border:1px solid rgba(188,213,246,.15);border-radius:50%;box-shadow:0 0 70px rgba(109,157,207,.07),inset 0 0 55px rgba(109,157,207,.05);animation:breathe 9s ease-in-out infinite}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(188,213,246,.12);border-radius:50%;inset:11%}
+.orbit:after{inset:23%;border-color:rgba(188,213,246,.1)}
+.core{position:absolute;left:50%;top:45%;width:min(26vw,150px);aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 38% 32%,rgba(220,238,255,.9),rgba(145,185,232,.46) 18%,rgba(103,145,201,.13) 48%,transparent 72%);filter:drop-shadow(0 0 32px rgba(123,180,231,.24));animation:glow 8s ease-in-out infinite}
+.visual{position:absolute;inset:0;opacity:.8}
+.visual:before,.visual:after{content:"";position:absolute;display:block}
+.theme-exam .visual:before{left:50%;top:72%;width:min(54vw,300px);height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(180,211,242,.5),transparent);box-shadow:0 -12px 0 rgba(180,211,242,.08),0 12px 0 rgba(180,211,242,.08)}
+.theme-memory .orbit{width:min(62vw,360px)}.theme-memory .core{background:radial-gradient(circle,rgba(213,234,255,.7),rgba(120,173,220,.23) 32%,transparent 70%)}
+.theme-waves .visual:before{left:-20%;right:-20%;top:56%;height:35%;border-top:1px solid rgba(145,185,232,.28);border-radius:50%;box-shadow:0 -18px 0 rgba(145,185,232,.09),0 -38px 0 rgba(145,185,232,.06),0 -60px 0 rgba(145,185,232,.04)}
+.theme-two .core{width:min(19vw,108px);left:42%;background:radial-gradient(circle,rgba(212,236,255,.7),rgba(117,215,196,.2) 50%,transparent 75%)}
+.theme-two .visual:before{width:min(24vw,135px);aspect-ratio:1;left:58%;top:45%;border:1px solid rgba(145,185,232,.28);border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 48px rgba(117,215,196,.07)}
+.theme-prism .visual:before{left:50%;top:45%;width:min(38vw,210px);height:min(38vw,210px);border:1px solid rgba(168,197,240,.35);transform:translate(-50%,-50%) rotate(45deg);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.theme-prism .core{background:radial-gradient(circle,rgba(224,239,255,.65),rgba(147,166,229,.18) 48%,transparent 72%)}
+.theme-embers .core{background:radial-gradient(circle at 50% 60%,rgba(255,197,143,.7),rgba(222,137,112,.22) 25%,rgba(116,151,198,.09) 52%,transparent 72%)}
+.theme-embers .visual:before{left:50%;top:45%;width:min(54vw,300px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(233,178,147,.14);transform:translate(-50%,-50%)}
+.theme-focus .orbit{width:min(76vw,450px);border-color:rgba(145,185,232,.22)}
+.theme-focus .orbit:before{inset:28%}.theme-focus .orbit:after{inset:42%}
+.theme-pages .visual:before{left:50%;top:48%;width:min(38vw,210px);height:min(48vw,265px);border:1px solid rgba(183,211,243,.28);border-radius:4px;transform:translate(-50%,-50%) rotate(-5deg);box-shadow:10px 7px 0 -1px #1b2b40,10px 7px 0 0 rgba(183,211,243,.17),-12px 11px 0 -1px #1b2b40,-12px 11px 0 0 rgba(183,211,243,.13)}
+.theme-path .visual:before{left:50%;top:48%;width:1px;height:45%;background:linear-gradient(transparent,rgba(145,185,232,.5),transparent);transform:rotate(18deg)}
+.theme-path .visual:after{left:calc(50% - 5px);top:30%;width:10px;aspect-ratio:1;border-radius:50%;background:rgba(204,227,250,.75);box-shadow:0 0 22px rgba(145,185,232,.7)}
+.theme-cloud .visual:before{left:50%;top:42%;width:min(55vw,310px);height:min(25vw,130px);border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(140,159,210,.12),transparent 70%);filter:blur(8px);animation:drift 12s ease-in-out infinite alternate}
+.theme-bloom .core{width:min(31vw,175px);background:radial-gradient(ellipse at 50% 50%,rgba(213,239,218,.75),rgba(117,215,196,.28) 24%,rgba(145,185,232,.12) 52%,transparent 72%)}
+.theme-bloom .visual:before{left:50%;top:45%;width:min(42vw,230px);aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);border:1px solid rgba(117,215,196,.2);box-shadow:0 0 0 18px rgba(117,215,196,.025),0 0 0 36px rgba(117,215,196,.02)}
+.theme-horizon .visual:before{left:-15%;right:-15%;top:61%;height:40%;border-top:1px solid rgba(145,185,232,.3);border-radius:50% 50% 0 0;background:linear-gradient(180deg,rgba(113,154,202,.07),transparent)}
+.theme-horizon .core{top:61%;width:min(17vw,95px)}
+@keyframes breathe{0%,100%{transform:translate(-50%,-50%) scale(.96);opacity:.65}50%{transform:translate(-50%,-50%) scale(1.04);opacity:1}}
+@keyframes glow{0%,100%{opacity:.55;transform:translate(-50%,-50%) scale(.92)}50%{opacity:.95;transform:translate(-50%,-50%) scale(1.08)}}
+@keyframes drift{from{transform:translate3d(-2%,1%,0) scale(.96)}to{transform:translate3d(2%,-2%,0) scale(1.04)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}}
 </style>
 </head>
 <body>
-<div class="page">
-<header>
-<p class="eyebrow">خودهیپنوتیزم · mh-exam-01</p>
-<h1>ورود آرام به جلسه</h1>
-<p class="subtitle">آماده‌شدن ذهن و بدن برای ورود آرام‌تر به جلسه‌ی امتحان.</p>
-</header>
-<main>
-<section class="card" aria-labelledby="intro-title">
-<h2 id="intro-title">پیش از شروع</h2>
-<p>جایی راحت و امن انتخاب کن که چند دقیقه فرصت داشته باشی. این تمرین اختیاری است؛ می‌توانی هر زمان خواستی مکث کنی یا آن را متوقف کنی.</p>
-<p class="muted">این صفحه اسکلت اولیه است. متن نهایی و فایل‌های صوتی هنوز باید اضافه و بررسی شوند.</p>
-</section>
-<section class="card" aria-labelledby="session-title" style="margin-top:16px">
-<h2 id="session-title">بخش‌های تمرین</h2>
-<div class="parts">
-<article class="part"><h3>بخش 1: آماده‌شدن و انتخاب وضعیت راحت</h3><p class="muted">متن گفتاری و فایل صوتی این بخش پس از بازبینی منبع اضافه می‌شود.</p><span class="status">صوت: در انتظار تولید</span></article>
-<article class="part"><h3>بخش 2: تنظیم توجه به تنفس</h3><p class="muted">متن گفتاری و فایل صوتی این بخش پس از بازبینی منبع اضافه می‌شود.</p><span class="status">صوت: در انتظار تولید</span></article>
-<article class="part"><h3>بخش 3: ساختن تصویر ورود به جلسه</h3><p class="muted">متن گفتاری و فایل صوتی این بخش پس از بازبینی منبع اضافه می‌شود.</p><span class="status">صوت: در انتظار تولید</span></article>
-<article class="part"><h3>بخش 4: مرور آرام شروع امتحان</h3><p class="muted">متن گفتاری و فایل صوتی این بخش پس از بازبینی منبع اضافه می‌شود.</p><span class="status">صوت: در انتظار تولید</span></article>
-<article class="part"><h3>بخش 5: تمرین بازگشت به لحظه‌ی حال</h3><p class="muted">متن گفتاری و فایل صوتی این بخش پس از بازبینی منبع اضافه می‌شود.</p><span class="status">صوت: در انتظار تولید</span></article>
-<article class="part"><h3>بخش 6: پایان و بازگشت به محیط</h3><p class="muted">متن گفتاری و فایل صوتی این بخش پس از بازبینی منبع اضافه می‌شود.</p><span class="status">صوت: در انتظار تولید</span></article>
-</div>
-</section>
+<main class="scene theme-exam" aria-label="ورود آرام به جلسه">
+<div class="haze" aria-hidden="true"></div>
+<div class="orbit" aria-hidden="true"></div>
+<div class="core" aria-hidden="true"></div>
+<div class="visual" aria-hidden="true"></div>
 </main>
-<footer>
-<p>شناسه محتوا: mh-exam-01</p>
-<p>تمرین آرام‌سازی و تمرکز؛ بدون ادعای درمان یا تضمین نتیجه.</p>
-</footer>
-</div>
 </body>
 </html>
