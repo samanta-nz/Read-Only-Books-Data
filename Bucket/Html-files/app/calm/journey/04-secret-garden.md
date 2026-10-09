@@ -1,10 +1,10 @@
-# باغ پنهان — راهنمای تولید صدا، بک‌گراند و رنگ‌بندی (MD)
+# # باغ پنهان — راهنمای تولید صوت
 
-- فایل HTML: `04-secret-garden.html` | شناسه: `cj-04` | مسیر: `Bucket/Html-files/app/calm/journey/04-secret-garden.html`
-- تعداد فایل صوتی: ۶ (هر بخش یک فایل) | مدت کل با مکث‌ها (سرعت ۱٫۳×): حدود ۲۲ دقیقه
-- مخاطب: «تو» (مفرد) با افعال محاوره‌ای. صفحه‌ی HTML پیوسته و همراه‌صدا است: بدون آکاردئون، بدون عنوان بخش، بدون متن اضافه.
+- فایل HTML مرتبط: `04-secret-garden.html` | شناسه: `cj-04`
+- خروجی: ۶ فایل MP3 مونو، هر بخش یک فایل، با کیفیت ۶۴ تا ۹۶ kbps؛ نام‌گذاری از `04-secret-garden-01.mp3` تا `04-secret-garden-06.mp3`.
+- مدت تقریبی کل، همراه مکث‌ها و با سرعت ۱٫۳×: حدود ۲۲ دقیقه.
 
-## ۱) خوانش: لحن، سرعت و مکث‌ها (اول این را بخوان)
+## راهنمای خوانش و مکث‌ها
 
 - **لحن کلی:** گرم، کنجکاو و آروم؛ مثل کسی که یه راز قشنگ رو آهسته نشون می‌ده. محاوره‌ای، نه رسمی، نه نمایشی. تُن پایین و یکدست، با کمی لبخند در صدا. جمله‌های دستوری نرم و پیشنهادی («بذار»، «می‌تونی»). حس کلی: کشف یه جای امن و خصوصی که مال خودته.
 - **سبک گفتار:** محاوره‌ای مفرد (می‌تونی، بذار، بریم، می‌شه، نمی‌خواد، اگه، یه). متن رو مثل حرف زدن بخون.
@@ -14,59 +14,9 @@
 - **آهنگ:** تخت و یکنواخت نخون. پایان جمله‌ی دستوری کمی پایین بیاد. «آروم»، «نفس»، «بو»، «نرم» کمی کشیده‌تر. توصیف بوها و رنگ‌ها کمی آهنگین‌تر، ولی بدون اغراق.
 - **خروجی صوتی:** برای هر بخش یک MP3 مونو، ۶۴ تا ۹۶ kbps. نام‌گذاری `04-secret-garden-01.mp3` تا `04-secret-garden-06.mp3`. خط «لحن» هر بخش و عنوان بخش‌ها خونده نمی‌شن.
 
-## ۲) ترکیب رنگی گوی و کنترل‌ها
+## متن گفتاری شش‌بخشی
 
-- **عنوان ترکیب رنگی:** «سبز بهاری و صورتی شکوفه»
-- **نسخه‌ی روشن:** صفحه #F0F8ED → #ECCADB | گوی کروی: مرکز سفید ۸۰٪، میانه #C72375، لبه #499523 | دکمه‌ی پخش: گرادیان #C72375 → #499523 با آیکون سفید | نوار پیشرفت: #C72375 → #499523 | متن: #263C1B | پنل کنترل: شیشه‌ی سفید ۵۵٪
-- **نسخه‌ی تاریک:** صفحه #0F1A0A → #391326 | گوی: مرکز سفید ۸۰٪، میانه #F25FA8، لبه #92EC65 | دکمه‌ی پخش: گرادیان #F25FA8 → #92EC65 با آیکون سفید | نوار پیشرفت: #F25FA8 → #92EC65 | متن: #E9F1E4 | پنل کنترل: شیشه‌ی مشکی ۲۸٪
-- **نوع گوی:** کره‌ی درخشان (sphere) که با نفس ۹ ثانیه‌ای بزرگ و کوچک می‌شه. **ذرات صفحه:** مه + حباب‌های ریز (مثل گرده و گلبرگ).
-
-## ۳) پرامپت بک‌گراند (دقیق و کامل)
-
-دو تصویر لازمه: نسخه‌ی روشن و تاریک. روی هر تصویر لایه‌ی محو رنگی خودکار می‌افته تا کنترل‌ها خوانا بمونن.
-
-### پرامپت نسخه‌ی روشن (انگلیسی؛ برای Midjourney / Flux / SDXL / Imagen)
-
-```text
-A secret garden seen through a small half-open arched wooden door in an old moss-covered stone wall, spring morning. Beyond the door a path of stepping stones winds between climbing roses, wisteria, lavender and tall grasses, with a small weathered stone fountain faintly visible in soft focus far back. Pale pink blossoms and fresh green foliage, dew on leaves, gentle diffused morning light. Airy, high-key, dreamy, photographic with gentle film softness. Palette: #F0F8ED, #ECCADB, #499523, #C72375. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% (30 to 70% of the height) soft, low-detail and low-contrast for a glowing orb, so let the door sit in the upper area or off-center with the garden softly blurred in the middle; keep the bottom 35% calm and slightly darker for a control panel; interest in the top third and margins. Gentle contrast, no bright hotspots, comfortable for hour-long viewing. No text, logos, watermark, people, faces, hands, foreground animals, cars or UI elements.
-```
-
-### پرامپت نسخه‌ی تاریک
-
-```text
-The same secret garden at blue twilight. Moonlit roses and wisteria glowing softly pink against deep green shadows, the stone wall in cool blue, a few tiny warm firefly bokeh points drifting along the path, the fountain barely visible. Very low-key, quiet, soft contrast, photographic. Palette: #0F1A0A, #391326, #92EC65, #F25FA8. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% soft, low-detail and low-contrast for a glowing orb; keep the bottom 35% calm and darker for a control panel; interest in the top third and margins. No bright hotspots. No text, logos, watermark, people, faces, hands, foreground animals, cars or UI elements.
-```
-
-### پرامپت منفی (هر دو نسخه)
-
-```text
-text, letters, watermark, logo, signature, people, face, hands, animals in foreground, cars, harsh contrast, oversaturated colors, neon, HDR halo, lens flare, chromatic aberration, noisy grain, border, frame, cartoon, illustration, 3D render look, clutter, garden gnomes, statues of people
-```
-
-### مشخصات خروجی و نسخه‌ی ویدیویی اختیاری
-
-- دو فایل `04-secret-garden-bg-light.webp` و `04-secret-garden-bg-dark.webp`، ۱۰۸۰×۱۹۲۰، کیفیت ۷۰ تا ۸۰، حداکثر حدود ۱۵۰ تا ۲۰۰ کیلوبایت هر کدوم. ترکیب‌بندی هر دو یکسان باشه.
-- لوپ ویدیویی (فعلاً در صفحه پشتیبانی نمی‌شه): `Seamless loop of 8 to 10 seconds: petals and pollen drift very slowly, leaves sway in a faint breeze, water in the fountain shimmers (dark version: a few fireflies drift). Camera locked off, 9:16, 1080x1920, 24 fps, MP4 under 1.5 MB, no audio.`
-
-## ۴) تزریق صدا و بک‌گراند به HTML
-
-```python
-import base64, json, re, glob
-n = '04-secret-garden'
-h = open(n + '.html', encoding='utf-8').read()
-uris = ['data:audio/mpeg;base64,' + base64.b64encode(open(f, 'rb').read()).decode() for f in sorted(glob.glob(n + '-0*.mp3'))]
-h = re.sub(r'AUDIO=\[.*?\];', lambda m: 'AUDIO=' + json.dumps(uris) + ';', h, count=1, flags=re.S)
-img = lambda p: 'data:image/webp;base64,' + base64.b64encode(open(p, 'rb').read()).decode()
-bg = 'const BG={light:"' + img(n + '-bg-light.webp') + '",dark:"' + img(n + '-bg-dark.webp') + '"};'
-h = re.sub(r'const BG=\{.*?\};', lambda m: bg, h, count=1, flags=re.S)
-open(n + '.html', 'w', encoding='utf-8').write(h)
-```
-
-تعداد MP3 باید ۶ باشه و ترتیبشون با ترتیب بخش‌ها یکی. تم صفحه خودکار تاریک/روشن می‌شه؛ اگه وب‌ویو تم رو نمی‌رسونه: `setTheme('dark')` یا `setTheme('light')`.
-
-## ۵) متن بخش‌ها برای تولید صدا
-
-> هر بخش یک فایل صوتی. خط «لحن» فقط برای تنظیم خوانشه و خونده نمی‌شه.
+> هر بخش یک فایل صوتی است. عنوان و خط «لحن» راهنمای خواننده‌اند و خوانده نمی‌شوند.
 
 ### بخش ۱: پیش از شروع، جا گرفتن
 
@@ -76,13 +26,13 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 این تمرین یه سفر ذهنیه. قراره با کمک صدا، وارد یه باغ پنهان بشی. باغی که پشت یه دیوار قدیمی قایم شده و فقط تو درش رو پیدا می‌کنی. شاید جایی شبیهش رو قبلاً دیده باشی، شاید هم کاملاً ساخته‌ی ذهن خودت باشه. **[مکث ۳ ثانیه]**
 
-چیزی برای درست انجام دادن وجود نداره. امتحان نیست و هیچ‌کس هم قضاوتت نمی‌کنه. اگه تصویر توی ذهنت واضح نمی‌شه هم نگران نباش؛ بعضی‌ها می‌بینن، بعضی‌ها فقط حس می‌کنن، بعضی‌ها با کلمه‌ها جلو می‌رن. هر سه درسته. **[مکث ۳ ثانیه]**
+قرار نیست کاری رو درست یا غلط انجام بدی. این امتحان نیست و کسی هم قرار نیست قضاوتت کنه. اگه تصویر توی ذهنت واضح نمی‌شه هم نگران نباش؛ بعضی‌ها می‌بینن، بعضی‌ها فقط حس می‌کنن، بعضی‌ها با کلمه‌ها جلو می‌رن. هر سه درسته. **[مکث ۳ ثانیه]**
 
 یه چیز جالب هم بگم. پژوهش‌ها نشون دادن که باغبانی و حتی نگاه کردن به یه باغ می‌تونه حال آدم رو بهتر کنه. یه مرور بزرگ که روی مطالعه‌های باغبانی انجام شد، اثرهای مثبت روی افسردگی، اضطراب و حال کلی رو گزارش کرد. البته این به این معنی نیست که یه باغ همه‌چیز رو حل می‌کنه؛ فقط یه راه کوچیک برای استراحت دادن به ذهنه. **[مکث ۳ ثانیه]**
 
 حالا یه جای راحت پیدا کن. اگه نشستی، تکیه بده و کف پاها رو روی زمین بذار. اگه دراز کشیدی، زیر زانوهات یه چیزی بذار. **[مکث ۴ ثانیه]**
 
-اگه راحته، چشم‌هات رو آروم ببند. اگه نه، نگاهت رو یه جای پایین، روی زمین، نرم کن. **[مکث ۴ ثانیه]**
+اگه راحتی، چشم‌هات رو ببند. اگه ترجیح می‌دی باز بمونن، نگاهت رو روی یه نقطه‌ی ساده از زمین یا میز نگه دار؛ لازم نیست بهش خیره بشی. **[مکث ۴ ثانیه]**
 
 شونه‌ها رو یه بار تا نزدیک گوش‌ها بالا بیار. **[مکث ۲ ثانیه]** و با یه بازدم بلند ول کن. **[مکث ۵ ثانیه]**
 
@@ -202,7 +152,7 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 یه کم آب از گوشه‌ی فواره می‌آری و روش می‌ریزی. خاک تیره می‌شه و آب آروم می‌ره پایین. **[مکث ۱۰ ثانیه]**
 
-حالا کاری نمونده که انجام بدی. دونه به زمان نیاز داره. و تو لازم نیست هر روز بیای و ببینیش یا هلش بدی. فقط می‌دونی که اون‌جاست. **[مکث ۱۰ ثانیه]**
+حالا دونه رو به حال خودش بذار. برای رشد کردن به زمان نیاز داره؛ لازم نیست هر روز سر بزنی یا بخوای وادارش کنی زودتر رشد کنه. فقط می‌دونی که اون‌جاست. **[مکث ۱۰ ثانیه]**
 
 اگه ذهنت گفت این کار یه کم بچه‌گونه‌ست، لبخند کوچیکی بزن و ادامه بده. ذهن همینه، حرف می‌زنه. **[مکث ۸ ثانیه]**
 
@@ -236,26 +186,16 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 انگشت‌های دست و پا رو یه کم تکون بده. **[مکث ۴ ثانیه]** شونه‌ها رو آروم بچرخون. **[مکث ۴ ثانیه]** اگه دوست داری، یه کش و قوس به بدنت بده. **[مکث ۶ ثانیه]**
 
-به صداهای واقعی اتاق گوش کن. **[مکث ۴ ثانیه]** به هوایی که دور و برته. **[مکث ۵ ثانیه]**
+به صداهای واقعی اتاق گوش بده. **[مکث ۴ ثانیه]** به هوایی که دور و برته. **[مکث ۵ ثانیه]**
 
-هر وقت آماده بودی، چشم‌هات رو باز کن. اگه هنوز بازن، فقط نگاهت رو برگردون به اتاق. **[مکث ۶ ثانیه]**
+هر وقت آماده بودی، چشم‌هات رو باز کن. اگه از قبل باز بودن، فقط توجهت رو به اتاق برگردون. **[مکث ۶ ثانیه]**
 
 و اگه لازم داشتی، چند ثانیه‌ی دیگه همین‌جا بمون و بعد بلند شو. **[مکث ۵ ثانیه]**
 
-یه نکته‌ی کوچیک برای بعد: لازم نیست هر دفعه بیست دقیقه وقت بذاری. تو روزهای شلوغ، همین‌قدر که چشم ببندی، سه تا نفس آروم بکشی و صدای فواره و بوی گل رو تو ذهنت بیاری، دو دقیقه کافیه. **[مکث ۵ ثانیه]**
+اگه وسط روز خواستی مکث کوتاهی داشته باشی، بوی گل‌ها و صدای فواره رو به یاد بیار و سه نفس آروم بکش. **[مکث ۵ ثانیه]**
 
-اگه بعد از تمرین حس کردی بیشتر نگران یا بی‌قرار شدی، نگران نباش، این هم گاهی پیش می‌آد. تمرین رو کنار بذار، یه کم راه برو یا آب بخور. و اگه این حس ادامه پیدا کرد، با یه متخصص سلامت روان صحبت کن. **[مکث ۵ ثانیه]**
+اگه بعد از تمرین حس کردی بیشتر نگران یا بی‌قرار شدی، نگران نباش، این هم گاهی پیش می‌آد. تمرین رو کنار بذار، یه کم راه برو یا آب بخور. **[مکث ۵ ثانیه]**
 
 ممنون که این چند دقیقه رو به خودت دادی. **[مکث ۳ ثانیه]**
 
-روز خوبی داشته باشی. **[مکث ۳ ثانیه]**
-
-## ۶) یادداشت ایمنی و منابع علمی (برای اپ؛ داخل صفحه‌ی صوتی نمایش داده نمی‌شه)
-
-- **ایمنی:** این تمرین رو موقع رانندگی یا کار با ماشین‌آلات گوش نده. اگه وسط تمرین تصویر ناخوشایندی اومد، چشم‌هات رو باز کن، به اتاق واقعی نگاه کن و هر وقت خواستی ادامه بده یا متوقف کن. بخش «کاشتن دونه» اختیاریه و می‌شه ردش کرد. این تمرین جایگزین درمان نیست.
-- Soga, M., Gaston, K. J., & Yamaura, Y. (2017). Gardening is beneficial for health: A meta-analysis. Preventive Medicine Reports, 5, 92–99.
-- Kaplan, R., & Kaplan, S. (1989). The Experience of Nature: A Psychological Perspective. Cambridge University Press.
-- Ulrich, R. S. (1984). View through a window may influence recovery from surgery. Science, 224(4647), 420–421.
-- Holmes, E. A., & Mathews, A. (2010). Mental imagery in emotion and emotional disorders. Clinical Psychology Review, 30(3), 349–362.
-- Zaccaro, A., et al. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.
-- NCCIH (NIH). Relaxation Techniques: What You Need To Know. https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
+امیدوارم ادامه‌ی روزت آروم بگذره. **[مکث ۳ ثانیه]**
