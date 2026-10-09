@@ -459,7 +459,7 @@ const SC={
     c.parts.forEach(p=>{
      const x=ox+p.dx*R0+Math.sin(t*p.k+p.p)*R0*.1,y=oy+p.dy*R0+Math.cos(t*p.k*.8+p.p)*R0*.08,r=p.r*R0;
      const gr=bx.createRadialGradient(x,y,0,x,y,r);
-     gr.addColorStop(0,`rgba(${C2},${p.g})`);gr.addColorStop(.55,`rgba(${C2},${p.g*.6})`);gr.addColorStop(1,`rgba(${C2},0)`);
+     gr.addColorStop(0,`rgba(${C2},${p.g*.85})`);gr.addColorStop(.55,`rgba(${C2},${p.g*.6*.85})`);gr.addColorStop(1,`rgba(${C2},0)`);
      bx.fillStyle=gr;bx.fillRect(x-r,y-r,r*2,r*2);
     });
    });
@@ -482,12 +482,12 @@ const SC={
   const p=mk(7,()=>({x:R(0,1),y:R(.3,.9),r:R(.35,.7),s:R(.012,.03),ph:R(0,6.3)}));
   return(t)=>{p.forEach(o=>{
    const x=(o.x+Math.sin(t*o.s+o.ph)*.18)*W,y=o.y*H,r=o.r*Math.max(W,H),gr=cx.createRadialGradient(x,y,0,x,y,r);
-   gr.addColorStop(0,`rgba(${C2},.16)`);gr.addColorStop(1,`rgba(${C2},0)`);cx.fillStyle=gr;cx.fillRect(0,0,W,H);
+   gr.addColorStop(0,`rgba(${C2},.136)`);gr.addColorStop(1,`rgba(${C2},0)`);cx.fillStyle=gr;cx.fillRect(0,0,W,H);
   })}},
  bokeh(){
   const p=mk(35,()=>({x:R(0,1),y:R(0,1),r:R(6,22),s:R(.01,.04),ph:R(0,6.3),a:R(.12,.35)}));
   return(t)=>{p.forEach(o=>{
-   const x=(o.x+Math.sin(t*o.s+o.ph)*.04)*W,y=(o.y+Math.cos(t*o.s*.9+o.ph)*.05)*H,g=(Math.sin(t*.5+o.ph)*.5+.5)*o.a+.08;
+   const x=(o.x+Math.sin(t*o.s+o.ph)*.04)*W,y=(o.y+Math.cos(t*o.s*.9+o.ph)*.05)*H,g=((Math.sin(t*.5+o.ph)*.5+.5)*o.a+.08)*.85;
    const gr=cx.createRadialGradient(x,y,0,x,y,o.r*2);gr.addColorStop(0,`rgba(${C1},${g})`);gr.addColorStop(1,`rgba(${C1},0)`);cx.fillStyle=gr;cx.fillRect(x-o.r*2,y-o.r*2,o.r*4,o.r*4);
   })}}
 };
