@@ -482,7 +482,7 @@ const SC={
   const p=mk(7,()=>({x:R(0,1),y:R(.3,.9),r:R(.35,.7),s:R(.012,.03),ph:R(0,6.3)}));
   return(t)=>{p.forEach(o=>{
    const x=(o.x+Math.sin(t*o.s+o.ph)*.18)*W,y=o.y*H,r=o.r*Math.max(W,H),gr=cx.createRadialGradient(x,y,0,x,y,r);
-   gr.addColorStop(0,`rgba(${C2},.1156)`);gr.addColorStop(1,`rgba(${C2},0)`);cx.fillStyle=gr;cx.fillRect(0,0,W,H);
+   gr.addColorStop(0,`rgba(${C2},.136)`);gr.addColorStop(1,`rgba(${C2},0)`);cx.fillStyle=gr;cx.fillRect(0,0,W,H);
   })}},
  bokeh(){
   const p=mk(35,()=>({x:R(0,1),y:R(0,1),r:R(6,22),s:R(.01,.04),ph:R(0,6.3),a:R(.12,.35)}));
