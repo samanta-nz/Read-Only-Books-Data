@@ -1,14 +1,10 @@
-# گوشه‌ی سبز شهری — راهنمای جامع تولید صدا، بک‌گراند و رنگ‌بندی
+# گوشه‌ی سبز شهری — راهنمای تولید صوت
 
-## ۱) مشخصات فایل
+- فایل HTML مرتبط: `09-urban-green-space.html` | شناسه: `cj-09`
+- خروجی: ۶ فایل MP3 مونو، هر بخش یک فایل، با کیفیت ۶۴ تا ۹۶ kbps؛ نام‌گذاری از `09-urban-green-space-01.mp3` تا `09-urban-green-space-06.mp3`.
+- مدت تقریبی کل، همراه مکث‌ها و با سرعت ۱٫۳×: حدود ۲۱ دقیقه.
 
-- فایل HTML: `09-urban-green-space.html` | شناسه: `cj-09` | مسیر: `Bucket/Html-files/app/calm/journey/09-urban-green-space.html`
-- تعداد فایل صوتی: ۶ (هر بخش یک فایل: `09-urban-green-space-01.mp3` تا `-06.mp3`) | مدت کل (سرعت ۱٫۳×، با مکث‌ها): حدود ۲۱ دقیقه
-- مخاطب: «تو» (مفرد) با افعال محاوره‌ای. صفحه پیوسته و همراه‌صدا است: بدون آکاردئون، بدون عنوان بخش، بدون متن اضافه.
-- تم صفحه: خودکار تاریک/روشن (prefers-color-scheme)، بدون دکمه. اگر وب‌ویوی اپ تم را نمی‌رساند: `setTheme('dark')` یا `setTheme('light')`.
-- نشانه‌ی آیکون سرعتی روی کنترل: از روی دکمه‌ی با آیکون چرخشی ۱۵ ثانیه‌ای (نه متن -۱۵/+۱۵).
-
-## ۲) خوانش: لحن، سرعت و مکث‌ها
+## راهنمای خوانش و مکث‌ها
 
 - **لحن کلی:** شاد، نزدیک و آرام، مثل کسی که وسط شهر یه نفس عمیق می‌کشه و آرام به تو می‌گه. تُن یکدست و پایین، بدون اوج دراماتیک. همراه با کمی آرام‌بخش از چشم‌انداز شهری به سمت درخت و سبزی.
 - **سبک گفتار:** محاوره‌ای مفرد (می‌تونی، بذار، بریم، می‌شه، نمی‌خواد، اگه، یه). متن رو مثل حرف زدن بخون، نه مثل خوندن.
@@ -17,59 +13,9 @@
 - **اندازه‌ی مکث‌ها:** کوتاه ۱ تا ۳ ثانیه | متوسط ۴ تا ۶ | بلند ۸ تا ۱۵ | ۱۲ تا ۱۵ فقط در پایان بخش‌ها برای سکوت کامل.
 - **آهنگ:** تخت و یکنواخت؛ پایان جمله‌ی دستوری کمی پایین. واژه‌های «نفس»، «سبز»، «آرام» کمی کشیده‌تر بیان.
 
-## ۳) ترکیب رنگی گوی و کنترل‌ها
+## متن گفتاری شش‌بخشی
 
-- **عنوان ترکیب:** «سبز شهری و نقره‌ی صبحگاهی»
-- **روشن:** صفحه #F0F2EE → #D8E6D2 | گوی (sphere): مرکز سفید ۸۰٪، میانه #8BB35A، لبه #4E7F3A | دکمه‌ی پخش: گرادیان #8BB35A → #4E7F3A با آیکون سفید | نوار پیشرفت: همان | متن: #26351F | پنل کنترل: شیشه‌ی سفید ۵۵٪
-- **تاریک:** صفحه #0E130D → #1E2E1A | گوی: مرکز سفید ۸۰٪، میانه #B6E36A، لبه #A3D97B | دکمه‌ی پخش: گرادیان #B6E36A → #A3D97B با آیکون سفید | متن: #E4EEDC | پنل کنترل: شیشه‌ی مشکی ۲۸٪
-- **ذرات صفحه:** برگ‌های ریزنده و تابش نرم نور روز (با انیمیشن نزدیک به اورانیون عادی، نه تند).
-
-## ۴) پرامپت بک‌گراند (دقیق و کامل)
-
-دو تصویر لازم است: روشن و تاریک (هر دو نسبت به هم عکس با از نظر ترکیب یکسان). لایه‌ی محو رنگی روی هر تصویر به‌صورت خودکار اضافه می‌شود.
-
-### نسخه‌ی روشن (انگلیسی؛ Midjourney / Flux / SDXL / Imagen)
-
-```text
-A small green pocket park in a city at early morning, seen at eye level from a bench-height viewpoint. A soft grass lawn with a gravel path curving through, young birch and linden trees with light green leaves, a few low shrubs in bloom, distant blurred apartment buildings in soft pastel tones behind the trees, faint morning haze, a single empty wooden bench at the edge. Calm, human-scale, gentle daylight, airy, high-key, soft focus depth, photographic with gentle film softness. Palette: #F0F2EE, #D8E6D2, #4E7F3A, #8BB35A. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% (30 to 70% of the height) soft, low-detail and low-contrast for a glowing orb, so let the buildings and trees blur into a soft band in the middle; keep the bottom 35% calm and slightly darker for a control panel; interest in the top third (canopy) and margins. Gentle contrast, no bright hotspots, comfortable for hour-long viewing. No text, logos, signs, watermark, people, faces, hands, animals, cars or UI elements.
-```
-
-### نسخه‌ی تاریک
-
-```text
-The same small city park at deep blue dusk. Soft street lamp glow far away, green lawn in cool blue shadow, birch leaves dark teal, distant city windows as tiny warm dots blurred into bokeh, a faint cool haze over the path, the empty bench barely visible. Very low-key, quiet, soft contrast, photographic. Palette: #0E130D, #1E2E1A, #A3D97B, #B6E36A. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% soft, low-detail and low-contrast for a glowing orb; keep the bottom 35% calm and darker for a control panel; interest in the top third and margins. No bright hotspots. No text, logos, signs, watermark, people, faces, hands, animals, cars or UI elements.
-```
-
-### پرامپت منفی (هر دو نسخه)
-
-```text
-text, letters, signs, watermark, logo, signature, people, face, hands, animals, cars, traffic, harsh contrast, oversaturated colors, neon, HDR halo, lens flare, chromatic aberration, noisy grain, border, frame, cartoon, illustration, 3D render look, clutter, litter, graffiti
-```
-
-### مشخصات خروجی و نسخه‌ی ویدیویی اختیاری
-
-- دو فایل `09-urban-green-space-bg-light.webp` و `09-urban-green-space-bg-dark.webp`، ۱۰۸۰×۱۹۲۰، کیفیت ۷۰ تا ۸۰، حداکثر ۱۵۰ تا ۲۰۰ کیلوبایت.
-- لوپ ویدیویی (فعلاً نمایش داده نمی‌شود): `Seamless loop 8 to 10 seconds: leaves move gently in a light breeze, distant traffic is absent, a few birds never cross the frame, light shifts softly across the lawn. Camera locked off, 9:16, 1080x1920, 24 fps, MP4 under 1.5 MB, no audio.`
-
-### تزریق صدا و بک‌گراند به HTML
-
-```python
-import base64, json, re, glob
-n = '09-urban-green-space'
-h = open(n + '.html', encoding='utf-8').read()
-uris = ['data:audio/mpeg;base64,' + base64.b64encode(open(f, 'rb').read()).decode() for f in sorted(glob.glob(n + '-0*.mp3'))]
-h = re.sub(r'AUDIO=\[.*?\];', lambda m: 'AUDIO=' + json.dumps(uris) + ';', h, count=1, flags=re.S)
-img = lambda p: 'data:image/webp;base64,' + base64.b64encode(open(p, 'rb').read()).decode()
-bg = 'const BG={light:"' + img(n + '-bg-light.webp') + '",dark:"' + img(n + '-bg-dark.webp') + '"};'
-h = re.sub(r'const BG=\{.*?\};', lambda m: bg, h, count=1, flags=re.S)
-open(n + '.html', 'w', encoding='utf-8').write(h)
-```
-
-تعداد MP3 باید ۶ باشد و ترتیب با ترتیب بخش‌ها یکی. صفحه خودکار تاریک/روشن می‌شود.
-
-### متن بخش‌ها برای تولید صدا
-
-> هر بخش یک فایل صوتی است. خط «لحن» فقط برای تنظیم خوانش است و خونده نمی‌شود.
+> هر بخش یک فایل صوتی است. عنوان و خط «لحن» راهنمای خواننده‌اند و خوانده نمی‌شوند.
 
 #### بخش ۱: پیش از شروع، نفس با شهر
 - **لحن:** نرم و دوستانه، کمی آروم‌تر از گفت‌وگوی عادی.
@@ -104,7 +50,7 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 #### بخش ۳: صداهای شهر در باغ
 - **لحن:** کندتر و آهنگین، با سکوت‌های واقعی. صداها رو روی «دور» و «نزدیک» تنظیم کن.
 
-حالا چشم‌هات رو ببند و فقط گوش بده. **[مکث ۵ ثانیه]**
+چشم‌هات رو ببند، اگه این حالت برات راحته؛ بعد فقط گوش بده. **[مکث ۵ ثانیه]**
 
 اولین صدا برگهاست. نرم و بی‌عجله می‌رقصه. هر بار یه برگ از جایی به جای دیگه می‌ره. **[مکث ۸ ثانیه]**
 
@@ -112,9 +58,9 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 و یه باد ملایم توی درختها می‌چرخه. برگ‌ها به هم می‌خورن و یه صدای آرام می‌دن. **[مکث ۸ ثانیه]**
 
-یه مرغ کوچیک روی شاخه و بعد ساکت. اگه صدای خودرو بیان نزدیک، لازم نیست دنبالش بگردی. **[مکث ۸ ثانیه]**
+یه پرنده‌ی کوچیک روی شاخه می‌شینه و بعد ساکت می‌شه. اگه صدای یه خودرو نزدیک شد، لازم نیست دنبالش بگردی. **[مکث ۸ ثانیه]**
 
-اگه صدای شهر بلند شد، لازم نیست حواست رو به ان بده. فقط برگرد به صدای برگ‌ها. **[مکث ۱۰ ثانیه]**
+اگه صدای شهر بلند شد، لازم نیست دنبالش رو بگیری؛ فقط دوباره به صدای برگ‌ها گوش بده. **[مکث ۱۰ ثانیه]**
 
 حالا با هر بازدم، از نفست خبر گرفتنی بدون عجله. **[مکث ۴ ثانیه]** بازدم. **[مکث ۶ ثانیه]**
 
@@ -153,17 +99,8 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 چشم‌هات رو باز کن و اتاق رو ببین. اگه هنوز باز نیستی، نگاهت رو آروم به اتاق برگردون. **[مکث ۶ ثانیه]**
 
-یه نکته برای بعد: در روزهای شلوغ، همین سه نفس در وسط راه کافیه. مغزت این مسیر رو یاد بگیره. **[مکث ۵ ثانیه]**
+وسط روزهای شلوغ، سه نفس آروم بکش و برای چند لحظه به درختی نزدیکت یا تکه‌ای از آسمون نگاه کن. **[مکث ۵ ثانیه]**
 
-اگه بعد از تمرین نگران شدی، نگران نباش، این هم گاهی اتفاق می‌افته. اگه این حس ادامه پیدا کرد، با یه متخصص سلامت روان صحبت کن. **[مکث ۳ ثانیه]**
+اگه بعد از تمرین کمی ناآروم بودی، یه نگاه به اطرافت بنداز و چند لحظه به صداهای محیط گوش بده. **[مکث ۳ ثانیه]**
 
-روز خوبی داشته باشی. **[مکث ۳ ثانیه]**
-
-### یادداشت ایمنی و منابع علمی (برای اپ؛ داخل صفحه‌ی صوتی نمایش داده نمی‌شود)
-
-- **ایمنی:** رانندگی یا کار با ماشین‌آلات را با این تمرین نشونید. اگر وسط تمرین احساس ناخوشایند یا بی‌قراری پیدا کردی، چشم‌ها را باز کن و اگر لازم بود با یک متخصص صحبت کن.
-- Hartig, T., Mitchell, R., de Vries, S., & Frumkin, H. (2014). Nature and health. Annual Review of Public Health, 35, 207–228.
-- Wolch, J., Byrne, J., & Newell, J. P. (2014). Urban green space, public health, and environmental justice: The challenge of making cities 'just green enough'. Landscape and Urban Planning, 125, 234–244.
-- Ulrich, R. S. (1984). View through a window may influence recovery from surgery. Science, 224(4647), 420–421.
-- Zaccaro, A., et al. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.
-- NCCIH (NIH). Relaxation Techniques: What You Need To Know. https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
+امیدوارم ادامه‌ی روزت آروم بگذره. **[مکث ۳ ثانیه]**
