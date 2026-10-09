@@ -1,11 +1,10 @@
-# جای امن ذهنی — راهنمای تولید صدا، بک‌گراند و رنگ‌بندی (MD)
+# # جای امن ذهنی — راهنمای تولید صوت
 
-- فایل HTML: `08-safe-mental-refuge.html` | شناسه: `cj-08` | مسیر: `Bucket/Html-files/app/calm/journey/08-safe-mental-refuge.html`
-- تعداد فایل صوتی: ۶ (هر بخش یک فایل) | مدت کل با مکث‌ها (سرعت ۱٫۳×): حدود ۲۲ دقیقه
-- مخاطب: «تو» (مفرد) با افعال محاوره‌ای. صفحه‌ی HTML پیوسته و همراه‌صدا است: بدون آکاردئون، بدون عنوان بخش، بدون متن اضافه.
-- **هشدار مهم برای شنونده و سازنده:** این تمرین با استرس و خاطره‌ی سخت کار می‌کند. هیچ‌وقت به شنونده نگو تو باید بری توی خاطره‌ی بد. اول از همه امنیت و حضور در الان رو می‌سازیم.
+- فایل HTML مرتبط: `08-safe-mental-refuge.html` | شناسه: `cj-08`
+- خروجی: ۶ فایل MP3 مونو، هر بخش یک فایل، با کیفیت ۶۴ تا ۹۶ kbps؛ نام‌گذاری از `08-safe-mental-refuge-01.mp3` تا `08-safe-mental-refuge-06.mp3`.
+- مدت تقریبی کل، همراه مکث‌ها و با سرعت ۱٫۳×: حدود ۲۲ دقیقه.
 
-## ۱) خوانش: لحن، سرعت و مکث‌ها (اول این را بخوان)
+## راهنمای خوانش و مکث‌ها
 
 - **لحن کلی:** آرام، محافظ‌کارانه و بی‌شتاب. مثل کسی که کنار تو نشسته و مطمئن که هیچی از تو نمی‌خواد. هیچ اجباری در لحن نباشد. هر جمله با اختیار و اجازه بیان.
 - **سبک گفتار:** محاوره‌ای مفرد (می‌تونی، بذار، بریم، می‌شه، نمی‌خواد، اگه، یه). متن رو مثل حرف زدن بخون.
@@ -15,71 +14,21 @@
 - **آهنگ:** تخت و یکنواخت، بدون اوج و فرود. واژه‌های «امن»، «آرام»، «نفس» کمی کشیده‌تر. مهم‌تر از همه: هر جا چیزی به شنونده فشار آورد، لحن رو نرم‌تر و سکوتش رو بیشتر کن.
 - **خروجی صوتی:** برای هر بخش یک MP3 مونو، ۶۴ تا ۹۶ kbps. نام‌گذاری `08-safe-mental-refuge-01.mp3` تا `08-safe-mental-refuge-06.mp3`. خط «لحن» و عنوان بخش‌ها خونده نمی‌شن.
 
-## ۲) ترکیب رنگی گوی و کنترل‌ها
+## متن گفتاری شش‌بخشی
 
-- **عنوان ترکیب رنگی:** «سبزه‌ی آسوده و نقره‌ای نرم»
-- **نسخه‌ی روشن:** صفحه #EEF3F0 → #D5E6E0 | گوی: مرکز سفید ۸۰٪، میانه #5FB8B0، لبه #2E7A62 | دکمه‌ی پخش: گرادیان #5FB8B0 → #2E7A62 با آیکون سفید | نوار پیشرفت: همان | متن: #1F3A33 | پنل کنترل: شیشه‌ی سفید ۵۵٪
-- **نسخه‌ی تاریک:** صفحه #0A1613 → #123330 | گوی: همان مرکز، میانه #6FE0E0، لبه #7FD9C0 | دکمه‌ی پخش: گرادیان #6FE0E0 → #7FD9C0 با آیکون سفید | نوار پیشرفت: همان | متن: #DDF0EA | پنل کنترل: شیشه‌ی مشکی ۲۸٪
-- **نوع گوی:** حلقه‌ی نرم (drops یا دایره‌ی شیشه‌ای) که آهسته می‌تپه. **ذرات صفحه:** مه و نور شیرین روشن بسیار آرام.
-
-## ۳) پرامپت بک‌گراند (دقیق و کامل)
-
-دو تصویر لازمه: نسخه‌ی روشن و تاریک. روی هر تصویر لایه‌ی محو رنگی خودکار می‌افته.
-
-### پرامپت نسخه‌ی روشن (انگلیسی؛ برای Midjourney / Flux / SDXL / Imagen)
-
-```text
-A quiet secluded clearing in a soft temperate woodland, seen at eye level from inside a gentle grassy hollow. Low sage-green grass, a single smooth grey stone resting at the front, a few wild ferns and small white flowers, a gentle canopy of birch and beech leaves overhead letting soft diffused daylight through. Calm, enclosed, protected feeling, but open sky visible at the top. Airy, soft focus depth, photographic with gentle film softness. Palette: #EEF3F0, #D5E6E0, #2E7A62, #5FB8B0. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% (30 to 70% of the height) soft, low-detail and low-contrast for a glowing orb; keep the bottom 35% calm and slightly darker for a control panel; interest in the top third and margins. Gentle contrast, no bright hotspots, comfortable for hour-long viewing. No text, logos, watermark, people, faces, hands, animals, buildings, cars or UI elements.
-```
-
-### پرامپت نسخه‌ی تاریک
-
-```text
-The same enclosed clearing at deep blue dusk. Soft teal moonlight through the canopy, the smooth stone faintly lit, the grass in deep blue-green shadow, a little cool mist low to the ground, a few faint stars visible in the open sky above. Very low-key, quiet, soft contrast, photographic. Palette: #0A1613, #123330, #7FD9C0, #6FE0E0. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% soft, low-detail and low-contrast for a glowing orb; keep the bottom 35% calm and darker for a control panel; interest in the top third and margins. No bright hotspots. No text, logos, watermark, people, faces, hands, animals, buildings, cars or UI elements.
-```
-
-### پرامپت منفی (هر دو نسخه)
-
-```text
-text, letters, watermark, logo, signature, people, face, hands, animals, buildings, cars, harsh contrast, oversaturated colors, neon, HDR halo, lens flare, chromatic aberration, noisy grain, border, frame, cartoon, illustration, 3D render look, clutter, dark forest shadows that feel threatening, sharp thorns, dead trees, storm
-```
-
-### مشخصات خروجی و نسخه‌ی ویدیویی اختیاری
-
-- دو فایل `08-safe-mental-refuge-bg-light.webp` و `08-safe-mental-refuge-bg-dark.webp`، ۱۰۸۰×۱۹۲۰، کیفیت ۷۰ تا ۸۰، حداکثر حدود ۱۵۰ تا ۲۰۰ کیلوبایت هر کدوم. ترکیب‌بندی هر دو یکسان باشه.
-- لوپ ویدیویی (فعلاً در صفحه پشتیبانی نمی‌شه): `Seamless loop of 8 to 10 seconds: very gentle light shifts through the leaves, a faint breeze moves the grass and ferns, dust motes drift slowly in the light. Camera locked off, 9:16, 1080x1920, 24 fps, MP4 under 1.5 MB, no audio.`
-
-## ۴) تزریق صدا و بک‌گراند به HTML
-
-```python
-import base64, json, re, glob
-n = '08-safe-mental-refuge'
-h = open(n + '.html', encoding='utf-8').read()
-uris = ['data:audio/mpeg;base64,' + base64.b64encode(open(f, 'rb').read()).decode() for f in sorted(glob.glob(n + '-0*.mp3'))]
-h = re.sub(r'AUDIO=\[.*?\];', lambda m: 'AUDIO=' + json.dumps(uris) + ';', h, count=1, flags=re.S)
-img = lambda p: 'data:image/webp;base64,' + base64.b64encode(open(p, 'rb').read()).decode()
-bg = 'const BG={light:"' + img(n + '-bg-light.webp') + '",dark:"' + img(n + '-bg-dark.webp') + '"};'
-h = re.sub(r'const BG=\{.*?\};', lambda m: bg, h, count=1, flags=re.S)
-open(n + '.html', 'w', encoding='utf-8').write(h)
-```
-
-تعداد MP3 باید ۶ باشه و ترتیبشون با ترتیب بخش‌ها یکی. تم صفحه خودکار تاریک/روشن می‌شه.
-
-## ۵) متن بخش‌ها برای تولید صدا
-
-> هر بخش یک فایل صوتی. خط «لحن» فقط برای تنظیم خوانشه و خونده نمی‌شه.
+> هر بخش یک فایل صوتی است. عنوان و خط «لحن» راهنمای خواننده‌اند و خوانده نمی‌شوند.
 
 ### بخش ۱: پیش از شروع، امنیت اول
 
 - **لحن:** آرام، محافظ‌کارانه و بی‌شتاب. بیشتر توضیحه؛ مثل حرف زدن بخون.
 
-سلام. قبل از هر چیزی، اول یه چیز رو بگم: این تمرین برای ساختن یه جای امن در ذهن توه. هیچ لازم نیست چیزی رو بیاد به یادت بیاری یا به چیزی فکر کنی که ناراحتت می‌کنه. **[مکث ۳ ثانیه]**
+سلام. قبل از هر چیزی، اول یه چیز رو بگم: این تمرین برای ساختن یه جای امن در ذهن توه. لازم نیست چیزی رو به یادت بیاری یا به چیزی فکر کنی که ناراحتت می‌کنه. **[مکث ۳ ثانیه]**
 
 اگه تو سابقه‌ی سختی داری و الان هم این بهت سخت باشه، اونوقت بدون عجله و بی‌اشکال با یه متخصص تمرین کن. این صوت جایگزین روش درمانی نیست. **[مکث ۴ ثانیه]**
 
 بیا چند لحظه با هم روی امنیت تمرکز کنیم. اگه نشستی، تکیه بده و پاهات رو روی زمین بذار. **[مکث ۳ ثانیه]**
 
-حالا چشم‌هات رو ببند، اگه راحته. اگه نه، نگاهت رو نقطه‌ی نرم و بی‌عجله روی زمین بذار. **[مکث ۴ ثانیه]**
+اگه راحتی، چشم‌هات رو ببند. اگه ترجیح می‌دی باز بمونن، نگاهت رو روی یه نقطه‌ی ساده از زمین یا میز نگه دار. **[مکث ۴ ثانیه]**
 
 شونه‌هات رو یه بار بالا ببر و با بازدم رها کن. **[مکث ۵ ثانیه]**
 
@@ -151,21 +100,12 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 نفس بعدیو کمی عمیق‌تر بکش. **[مکث ۴ ثانیه]** و بازدم. **[مکث ۵ ثانیه]**
 
-به صداهای واقعی اتاق گوش کن. **[مکث ۴ ثانیه]** هر وقت آماده بودی، چشم‌هات رو باز کن. **[مکث ۶ ثانیه]**
+به صداهای واقعی اتاق گوش بده. **[مکث ۴ ثانیه]** هر وقت آماده بودی، چشم‌هات رو باز کن. **[مکث ۶ ثانیه]**
 
-یه نکته‌ی کوچیک برای بعد: اگه خواستی به این جا بری، لازم نیست همه چیز رو دوباره بسازی. فقط چشم‌هات رو ببند و سه نفس آرام بکش. این هم یه جای آشنایی است. **[مکث ۵ ثانیه]**
+اگه خواستی دوباره به این جای امن سر بزنی، چند نفس طبیعی بکش و یکی از جزئیات آشنای این فضا رو به یاد بیار. **[مکث ۵ ثانیه]**
 
-اگه بعد از تمرین ناراحت یا بی‌قرار شدی، کار رو نگه دار و یه چیز ملموس و واقعی به خودت بده: یه لیوان آب، یه نفس عمیق، یا چند ثانیه راه رفتن داخل اتاق. اگه این حس ادامه پیدا کرد، با یه متخصص سلامت روان صحبت کن. **[مکث ۸ ثانیه]**
+اگه بعد از تمرین ناراحت یا بی‌قرار شدی، کار رو نگه دار و یه چیز ملموس و واقعی به خودت بده: یه لیوان آب، یه نفس عمیق، یا چند ثانیه راه رفتن داخل اتاق.  **[مکث ۸ ثانیه]**
 
 ممنون که این چند دقیقه رو به خودت دادی. **[مکث ۳ ثانیه]**
 
-روز خوبی داشته باشی. **[مکث ۳ ثانیه]**
-
-## ۶) یادداشت ایمنی و منابع علمی (برای اپ؛ داخل صفحه‌ی صوتی نمایش داده نمی‌شه)
-
-- **ایمنی:** این تمرین رو هنگام رانندگی یا کار با ماشین‌آلات گوش نده. اگه احساس بی‌قراری، ترس یا بی‌خوابی توی روزهای بعد داشتی، یا وسط تمرین خاطره‌ای دردناک آمد، به یه متخصص سلامت روان مراجعه کن. این تمرین جایگزین درمان نیست.
-- Herman, J. L. (1992). Trauma and Recovery. New York: Basic Books. (مرحله‌ی اول کار روی تثبیت امنیت و به‌عنوان پایه قبل از هر شکل بازسازی)
-- Ogden, P., Minton, K., & Pain, C. (2006). Trauma and the Body: A Sensorimotor Approach to Psychotherapy. New York: Norton. (تمرکز بر حس بدنی و زمین‌سازی)
-- Porges, S. W. (2011). The Polyvagal Theory. New York: Norton. (احساس امنیت و تنظیم سیستم عصبی)
-- Zaccaro, A., et al. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.
-- NCCIH (NIH). Relaxation Techniques: What You Need To Know. https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
+امیدوارم ادامه‌ی روزت آروم بگذره. **[مکث ۳ ثانیه]**
