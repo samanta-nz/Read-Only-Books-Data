@@ -3,6 +3,7 @@
 - **شناسه:** `mh-study-03`
 - **دسته:** `mindfulness/hypnosis/study`
 - **فایل HTML متناظر:** `03-release-procrastination.html`
+- **نقش HTML:** فقط تصویرسازی‌های ذهنی و عناصر بصری؛ متن گفتاری روی HTML نمایش داده نمی‌شود. متن زیر برای گوینده و تولید فایل صوتی است.
 - **وضعیت:** متن گفتاری کامل و مستقل، نوشته‌شده با تمرکز بر مهارت‌های قابل تمرین و زبان محاوره‌ای.
 - **مدت تقریبی:** ۷ تا ۹ دقیقه با احتساب مکث‌ها.
 - **تقسیم صوت:** شش فایل؛ `03-release-procrastination-01.mp3` تا `03-release-procrastination-06.mp3`.
@@ -84,11 +85,16 @@
 ## یادداشت علمی و دامنه‌ی استفاده
 این فایل برای تمرین خودیاری و آموزش مهارت است و جایگزین تشخیص یا درمان نیست. شواهد هیپنوتیزم بسته به موضوع و شیوه‌ی اجرا متفاوت است و برای همه‌ی کاربردها نتیجه‌ی قطعی نشان نمی‌دهد. تمرین حاضر وعده‌ی تغییر فوری احساسات، رفتار دیگران یا نتیجه‌ی بیرونی نمی‌دهد؛ هدف آن تقویت توجه و آماده‌سازی برای گام‌های واقعی است.
 
-## منابع
-- The Learning Scientists, “Six Strategies for Effective Learning”: https://www.learningscientists.org/posters
-- Smith, M. A., et al. (2016). Retrieval practice protects memory against acute stress. *Science*. https://pubmed.ncbi.nlm.nih.gov/27885031/
-- Taylor, S. E., et al. (1998). Harnessing the imagination: Mental simulation, self-regulation, and coping. *American Psychologist*. https://pubmed.ncbi.nlm.nih.gov/9572006/
-- Zhou, X., et al. (2026). Beyond positive thinking: A randomized trial of mental contrasting with implementation intentions to curb academic procrastination. *Acta Psychologica*. https://pubmed.ncbi.nlm.nih.gov/41601124/
-- NCCIH, “Hypnosis”: https://www.nccih.nih.gov/health/hypnosis
+## منابع و مبنای طراحی
+
+این منابع برای انتخاب و بررسی اصول تمرین استفاده شده‌اند؛ متن فارسی زیر بازنویسی مستقل است و نقل‌قول یا ترجمه‌ی مستقیم مقاله‌ها نیست. همبستگی یا اثر گزارش‌شده در یک مطالعه به معنی تضمین نتیجه برای هر شنونده نیست.
+
+- Wang, G., Wang, Y., & Gai, X. (2021). A meta-analysis of the effects of mental contrasting with implementation intentions on goal attainment. https://pubmed.ncbi.nlm.nih.gov/34054628/
+- Zhou, X., et al. (2026). Beyond positive thinking: A randomized trial of mental contrasting with implementation intentions to curb academic procrastination. *Acta Psychologica*. https://pubmed.ncbi.nlm.nih.gov/41601124/ (مطالعه‌ی مقدماتی با نمونه‌ی محدود؛ نتیجه‌اش نباید به همه‌ی افراد تعمیم قطعی داده شود.)
+- Valshtein, T. J., Oettingen, G., & Gollwitzer, P. M. (2020). Using mental contrasting with implementation intentions to reduce bedtime procrastination: Two randomised trials. https://pubmed.ncbi.nlm.nih.gov/31403339/
+
+### منابع عمومی و ملاحظات ایمنی
+
+- National Center for Complementary and Integrative Health (NCCIH), “Hypnosis” — شواهد هیپنوتیزم به موضوع وابسته‌اند و برای بسیاری از کاربردها قطعی نیستند: https://www.nccih.nih.gov/health/hypnosis
+- NCCIH, “Relaxation Techniques: What You Need To Know”: https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
 - NHS, “Breathing exercises for stress”: https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/
-- NCCIH, “Anxiety and Complementary Health Approaches”: https://www.nccih.nih.gov/health/anxiety-and-complementary-health-approaches
