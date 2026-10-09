@@ -1,10 +1,10 @@
-# جنگل حسی — راهنمای تولید صدا، بک‌گراند و رنگ‌بندی (MD)
+# # جنگل حسی — راهنمای تولید صوت
 
-- فایل HTML: `07-sensory-forest.html` | شناسه: `cj-07` | مسیر: `Bucket/Html-files/app/calm/journey/07-sensory-forest.html`
-- تعداد فایل صوتی: ۶ (هر بخش یک فایل) | مدت کل با مکث‌ها (سرعت ۱٫۳×): حدود ۲۲ دقیقه
-- مخاطب: «تو» (مفرد) با افعال محاوره‌ای. صفحه‌ی HTML پیوسته و همراه‌صدا است: بدون آکاردئون، بدون عنوان بخش، بدون متن اضافه.
+- فایل HTML مرتبط: `07-sensory-forest.html` | شناسه: `cj-07`
+- خروجی: ۶ فایل MP3 مونو، هر بخش یک فایل، با کیفیت ۶۴ تا ۹۶ kbps؛ نام‌گذاری از `07-sensory-forest-01.mp3` تا `07-sensory-forest-06.mp3`.
+- مدت تقریبی کل، همراه مکث‌ها و با سرعت ۱٫۳×: حدود ۲۲ دقیقه.
 
-## ۱) خوانش: لحن، سرعت و مکث‌ها (اول این را بخوان)
+## راهنمای خوانش و مکث‌ها
 
 - **لحن کلی:** کنجکاو و آهسته؛ مثل راهنمایی که هر چیز رو با توجه نشون می‌ده، بدون عجله. محاوره‌ای، نه رسمی، نه نمایشی. تُن پایین و یکدست. هر بخش یه حس رو جلوی شنونده می‌ذاره؛ بین‌شون مکث‌های بلندتر.
 - **سبک گفتار:** محاوره‌ای مفرد (می‌تونی، بذار، بریم، می‌شه، نمی‌خواد، اگه، یه). متن رو مثل حرف زدن بخون.
@@ -14,59 +14,9 @@
 - **آهنگ:** تخت نخون؛ پایان جمله‌ی دستوری کمی پایین. «نرم»، «بو»، «خنک» کمی کشیده‌تر.
 - **خروجی صوتی:** برای هر بخش یک MP3 مونو، ۶۴ تا ۹۶ kbps. نام‌گذاری `07-sensory-forest-01.mp3` تا `07-sensory-forest-06.mp3`. خط «لحن» و عنوان بخش‌ها خونده نمی‌شن.
 
-## ۲) ترکیب رنگی گوی و کنترل‌ها
+## متن گفتاری شش‌بخشی
 
-- **عنوان ترکیب رنگی:** «زیتونیِ خزه و سبزِ برگ»
-- **نسخه‌ی روشن:** صفحه #F2F8ED → #CAECD0 | گوی کره‌ای: مرکز سفید ۸۰٪، میانه #23C73F، لبه #589523 | دکمه‌ی پخش: گرادیان #23C73F → #589523 با آیکون سفید | نوار پیشرفت: #23C73F → #589523 | متن: #2A3C1B | پنل کنترل: شیشه‌ی سفید ۵۵٪
-- **نسخه‌ی تاریک:** صفحه #111A0A → #13391A | گوی: مرکز سفید ۸۰٪، میانه #5FF277، لبه #A4EC65 | دکمه‌ی پخش: گرادیان #5FF277 → #A4EC65 با آیکون سفید | نوار پیشرفت: #5FF277 → #A4EC65 | متن: #EAF1E4 | پنل کنترل: شیشه‌ی مشکی ۲۸٪
-- **نوع گوی:** کره‌ی درخشان (sphere). **ذرات صفحه:** مه + حباب‌های ریز (مثل اسپر جنگل).
-
-## ۳) پرامپت بک‌گراند (دقیق و کامل)
-
-دو تصویر لازمه: نسخه‌ی روشن و تاریک. روی هر تصویر لایه‌ی محو رنگی خودکار می‌افته.
-
-### پرامپت نسخه‌ی روشن (انگلیسی؛ برای Midjourney / Flux / SDXL / Imagen)
-
-```text
-A close, low-angle view of a mossy forest floor in the morning: velvety moss on rounded rocks, young ferns unfurling, a few fallen leaves, dew drops on grass blades, a tiny clear stream trickling in the soft-focus distance, dappled warm sunlight filtering through a canopy far above. Shallow depth of field, everything soft and tactile, green and gold tones. Airy, high-key, photographic with gentle film softness. Palette: #F2F8ED, #CAECD0, #589523, #23C73F. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% (30 to 70% of the height) soft, low-detail and low-contrast for a glowing orb, so let the middle be blurred green bokeh; keep the bottom 35% calm and slightly darker for a control panel; sharp-ish interest (moss, ferns, dew) only in the top third and margins. Gentle contrast, no bright hotspots, comfortable for hour-long viewing. No text, logos, watermark, people, faces, hands, foreground animals, insects, buildings, cars or UI elements.
-```
-
-### پرامپت نسخه‌ی تاریک
-
-```text
-The same mossy forest floor at deep blue night. Cool moonlight, moss and ferns in deep green shadow, dew drops catching tiny points of pale light, faint teal mist near the ground, a scatter of soft warm-green firefly bokeh. Very low-key, quiet, soft contrast, photographic. Palette: #111A0A, #13391A, #A4EC65, #5FF277. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% soft, low-detail and low-contrast for a glowing orb; keep the bottom 35% calm and darker for a control panel; interest in the top third and margins. No bright hotspots. No text, logos, watermark, people, faces, hands, foreground animals, insects, buildings, cars or UI elements.
-```
-
-### پرامپت منفی (هر دو نسخه)
-
-```text
-text, letters, watermark, logo, signature, people, face, hands, animals in foreground, insects, buildings, cars, harsh contrast, oversaturated colors, neon, HDR halo, lens flare, chromatic aberration, noisy grain, border, frame, cartoon, illustration, 3D render look, clutter, mushrooms that look poisonous, thorns
-```
-
-### مشخصات خروجی و نسخه‌ی ویدیویی اختیاری
-
-- دو فایل `07-sensory-forest-bg-light.webp` و `07-sensory-forest-bg-dark.webp`، ۱۰۸۰×۱۹۲۰، کیفیت ۷۰ تا ۸۰، حداکثر حدود ۱۵۰ تا ۲۰۰ کیلوبایت هر کدوم. ترکیب‌بندی هر دو یکسان باشه.
-- لوپ ویدیویی (فعلاً در صفحه پشتیبانی نمی‌شه): `Seamless loop of 8 to 10 seconds: dew drops slowly slide down grass blades, light shafts shift subtly, ferns sway faintly. Camera locked off, 9:16, 1080x1920, 24 fps, MP4 under 1.5 MB, no audio.`
-
-## ۴) تزریق صدا و بک‌گراند به HTML
-
-```python
-import base64, json, re, glob
-n = '07-sensory-forest'
-h = open(n + '.html', encoding='utf-8').read()
-uris = ['data:audio/mpeg;base64,' + base64.b64encode(open(f, 'rb').read()).decode() for f in sorted(glob.glob(n + '-0*.mp3'))]
-h = re.sub(r'AUDIO=\[.*?\];', lambda m: 'AUDIO=' + json.dumps(uris) + ';', h, count=1, flags=re.S)
-img = lambda p: 'data:image/webp;base64,' + base64.b64encode(open(p, 'rb').read()).decode()
-bg = 'const BG={light:"' + img(n + '-bg-light.webp') + '",dark:"' + img(n + '-bg-dark.webp') + '"};'
-h = re.sub(r'const BG=\{.*?\};', lambda m: bg, h, count=1, flags=re.S)
-open(n + '.html', 'w', encoding='utf-8').write(h)
-```
-
-تعداد MP3 باید ۶ باشه و ترتیبشون با ترتیب بخش‌ها یکی. تم صفحه خودکار تاریک/روشن می‌شه؛ اگه وب‌ویو تم رو نمی‌رسونه: `setTheme('dark')` یا `setTheme('light')`.
-
-## ۵) متن بخش‌ها برای تولید صدا
-
-> هر بخش یک فایل صوتی. خط «لحن» فقط برای تنظیم خوانشه و خونده نمی‌شه.
+> هر بخش یک فایل صوتی است. عنوان و خط «لحن» راهنمای خواننده‌اند و خوانده نمی‌شوند.
 
 ### بخش ۱: پیش از شروع، جا گرفتن
 
@@ -80,7 +30,7 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 حالا یه جای راحت پیدا کن. اگه نشستی، کمرت رو به صندلی بده، و اگه دراز کشیدی، یه بالش کوچیک زیر زانوهات بذار. **[مکث ۴ ثانیه]**
 
-چشم‌هات رو آروم ببند، یا نگاهت رو یه جای پایین نرم کن. **[مکث ۵ ثانیه]**
+اگه راحتی، چشم‌هات رو ببند؛ وگرنه نگاهت رو روی یه نقطه‌ی ساده از زمین یا میز نگه دار. **[مکث ۵ ثانیه]**
 
 شونه‌هات رو بیار بالا و با یه بازدم ول کن. **[مکث ۵ ثانیه]** یه بار دیگه. **[مکث ۵ ثانیه]**
 
@@ -194,19 +144,10 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 انگشت‌های دست و پا رو تکون بده. **[مکث ۴ ثانیه]** شونه‌ها رو آروم بچرخون. **[مکث ۴ ثانیه]** یه کش و قوس به بدنت بده. **[مکث ۶ ثانیه]**
 
-به صداهای واقعی اتاق گوش کن. **[مکث ۴ ثانیه]** هر وقت آماده بودی، چشم‌هات رو باز کن. **[مکث ۶ ثانیه]**
+به صداهای واقعی اتاق گوش بده. **[مکث ۴ ثانیه]** هر وقت آماده بودی، چشم‌هات رو باز کن. **[مکث ۶ ثانیه]**
 
 یه چیز کوچیک برای بعد: هر وقت خسته بودی یا ذهنت شلوغ بود، کافیه یه حس رو انتخاب کنی و ده ثانیه واقعاً بهش متوجه بشی. مثلاً گرمای یه فنجون چای در دستت. همون جنگل کوچیک توست. **[مکث ۵ ثانیه]**
 
-ممنون که با من از همه‌ی حس‌هات گشت زدی. **[مکث ۳ ثانیه]**
+ممنون که این چند دقیقه رو با همه‌ی حواس‌ت گذروندی. **[مکث ۳ ثانیه]**
 
-روز خوبی داشته باشی. **[مکث ۳ ثانیه]**
-
-## ۶) یادداشت ایمنی و منابع علمی (برای اپ؛ داخل صفحه‌ی صوتی نمایش داده نمی‌شه)
-
-- **ایمنی:** این تمرین رو موقع رانندگی یا کار با ماشین‌آلات گوش نده. اگه وسط تمرین تصویر ناخوشایندی اومد، چشم‌هات رو باز کن، به اتاق واقعی نگاه کن و هر وقت خواستی ادامه بده یا متوقف کن. بخش «چشیدن» فقط تخیلیه؛ در جنگل واقعی گیاه یا قارچ نخور. این تمرین جایگزین درمان نیست.
-- Li, Q. (2010). Effect of forest bathing trips on human immune function. Environmental Health and Preventive Medicine, 15(1), 9–17.
-- Park, B. J., Tsunetsugu, Y., Kasetani, T., Kagawa, T., & Miyazaki, Y. (2010). The physiological effects of Shinrin-yoku (taking in the forest atmosphere or forest bathing): Evidence from field experiments in 24 forests across Japan. Environmental Health and Preventive Medicine, 15(1), 18–26.
-- Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182.
-- Zaccaro, A., et al. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.
-- NCCIH (NIH). Relaxation Techniques: What You Need To Know. https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
+امیدوارم ادامه‌ی روزت آروم بگذره. **[مکث ۳ ثانیه]**
