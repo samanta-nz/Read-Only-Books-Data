@@ -1,10 +1,10 @@
-# کلبه‌ی کوهستانی — راهنمای تولید صدا، بک‌گراند و رنگ‌بندی (MD)
+# # کلبه‌ی کوهستانی — راهنمای تولید صوت
 
-- فایل HTML: `03-mountain-cabin.html` | شناسه: `cj-03` | مسیر: `Bucket/Html-files/app/calm/journey/03-mountain-cabin.html`
-- تعداد فایل صوتی: ۶ (هر بخش یک فایل) | مدت کل با مکث‌ها (سرعت ۱٫۳×): حدود ۲۲ دقیقه
-- مخاطب: «تو» (مفرد) با افعال محاوره‌ای. صفحه‌ی HTML پیوسته و همراه‌صدا است: بدون آکاردئون، بدون عنوان بخش، بدون متن اضافه.
+- فایل HTML مرتبط: `03-mountain-cabin.html` | شناسه: `cj-03`
+- خروجی: ۶ فایل MP3 مونو، هر بخش یک فایل، با کیفیت ۶۴ تا ۹۶ kbps؛ نام‌گذاری از `03-mountain-cabin-01.mp3` تا `03-mountain-cabin-06.mp3`.
+- مدت تقریبی کل، همراه مکث‌ها و با سرعت ۱٫۳×: حدود ۲۲ دقیقه.
 
-## ۱) خوانش: لحن، سرعت و مکث‌ها (اول این را بخوان)
+## راهنمای خوانش و مکث‌ها
 
 - **لحن کلی:** گرم، پایین و آروم؛ مثل کسی که کنار شومینه کنار شنونده نشسته و بی‌عجله حرف می‌زنه. محاوره‌ای، نه رسمی، نه نمایشی. تُن یکدست، بدون اوج و فرود دراماتیک. جمله‌های دستوری نرم و پیشنهادی («بذار»، «می‌تونی») گفته بشن. حس کلی: امنیت و گرمای پناه گرفتن.
 - **سبک گفتار:** محاوره‌ای مفرد (می‌تونی، بذار، بریم، می‌شه، نمی‌خواد، اگه، یه). متن رو مثل حرف زدن بخون، نه مثل خوندن.
@@ -14,59 +14,9 @@
 - **آهنگ:** تخت و یکنواخت نخون. پایان جمله‌ی دستوری کمی پایین بیاد. «آروم»، «نفس»، «گرم»، «سنگینی» کمی کشیده‌تر. دم و بازدم با کشیدگی صدا نشون داده بشه، نه با فشار.
 - **خروجی صوتی:** برای هر بخش یک MP3 مونو، ۶۴ تا ۹۶ kbps. نام‌گذاری `03-mountain-cabin-01.mp3` تا `03-mountain-cabin-06.mp3`. خط «لحن» هر بخش و عنوان بخش‌ها خونده نمی‌شن.
 
-## ۲) ترکیب رنگی گوی و کنترل‌ها
+## متن گفتاری شش‌بخشی
 
-- **عنوان ترکیب رنگی:** «آبی کوهستان و کهربایی شومینه»
-- **نسخه‌ی روشن:** صفحه #EDF2F8 → #ECDCCA | گوی ماه‌مانند: مرکز سفید ۹۵٪، میانه #C77B23، لبه #235895، هاله‌ی کهربایی ملایم | دکمه‌ی پخش: گرادیان #C77B23 → #235895 با آیکون سفید | نوار پیشرفت: #C77B23 → #235895 | متن: #1B2A3C | پنل کنترل: شیشه‌ی سفید ۵۵٪
-- **نسخه‌ی تاریک:** صفحه #0A111A → #392813 | گوی: مرکز سفید ۹۵٪، میانه #F2AD5F، لبه #65A4EC، برش سایه‌ی هلالی | دکمه‌ی پخش: گرادیان #F2AD5F → #65A4EC با آیکون سفید | نوار پیشرفت: #F2AD5F → #65A4EC | متن: #E4EAF1 | پنل کنترل: شیشه‌ی مشکی ۲۸٪
-- **نوع گوی:** ماه (moon) که با نفس ۹ ثانیه‌ای کمی بزرگ و کوچک می‌شه. **ذرات صفحه:** ستاره + اخگر.
-
-## ۳) پرامپت بک‌گراند (دقیق و کامل)
-
-دو تصویر لازمه: نسخه‌ی روشن و تاریک. روی هر تصویر لایه‌ی محو رنگی خودکار می‌افته تا کنترل‌ها خوانا بمونن.
-
-### پرامپت نسخه‌ی روشن (انگلیسی؛ برای Midjourney / Flux / SDXL / Imagen)
-
-```text
-A small wooden mountain cabin at late afternoon, seen from a snowy forest path at eye level. Thin smoke rises from the stone chimney, warm amber light glows softly in the windows, pine trees dusted with snow frame the scene, soft blue-grey mountains fade into haze behind, gentle light snowfall. Pale blue and warm cream light, calm and sheltered mood, airy high-key, soft focus depth, photographic with gentle film softness. Palette: #EDF2F8, #ECDCCA, #235895, #C77B23. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% (30 to 70% of the height) soft, low-detail and low-contrast for a glowing orb, so place the cabin small in the lower-left or upper area, not in the center; keep the bottom 35% calm and slightly darker for a control panel; interest in the top third and margins. Gentle contrast, no bright hotspots, comfortable for hour-long viewing. No text, logos, watermark, people, faces, hands, foreground animals, cars or UI elements.
-```
-
-### پرامپت نسخه‌ی تاریک
-
-```text
-The same mountain cabin at deep blue night. Windows glowing warm amber, snow-laden pines, a faint scatter of stars above the mountain ridge, thin chimney smoke softly lit from below, gentle falling snow, cool blue shadows with small warm highlights. Very low-key, quiet, soft contrast, photographic. Palette: #0A111A, #392813, #65A4EC, #F2AD5F. Vertical 9:16, 1080x1920 px. Phone background behind a UI: keep the central 40% soft, low-detail and low-contrast for a glowing orb; keep the bottom 35% calm and darker for a control panel; interest in the top third and margins. No bright hotspots. No text, logos, watermark, people, faces, hands, foreground animals, cars or UI elements.
-```
-
-### پرامپت منفی (هر دو نسخه)
-
-```text
-text, letters, watermark, logo, signature, people, face, hands, animals in foreground, cars, harsh contrast, oversaturated colors, neon, HDR halo, lens flare, chromatic aberration, noisy grain, border, frame, cartoon, illustration, 3D render look, clutter, large bright fire flames
-```
-
-### مشخصات خروجی و نسخه‌ی ویدیویی اختیاری
-
-- دو فایل `03-mountain-cabin-bg-light.webp` و `03-mountain-cabin-bg-dark.webp`، ۱۰۸۰×۱۹۲۰، کیفیت ۷۰ تا ۸۰، حداکثر حدود ۱۵۰ تا ۲۰۰ کیلوبایت هر کدوم. ترکیب‌بندی هر دو یکسان باشه.
-- لوپ ویدیویی (فعلاً در صفحه پشتیبانی نمی‌شه): `Seamless loop of 8 to 10 seconds: soft snowflakes drift down slowly, chimney smoke curls upward, window light flickers very subtly like firelight. Camera locked off, 9:16, 1080x1920, 24 fps, MP4 under 1.5 MB, no audio.`
-
-## ۴) تزریق صدا و بک‌گراند به HTML
-
-```python
-import base64, json, re, glob
-n = '03-mountain-cabin'
-h = open(n + '.html', encoding='utf-8').read()
-uris = ['data:audio/mpeg;base64,' + base64.b64encode(open(f, 'rb').read()).decode() for f in sorted(glob.glob(n + '-0*.mp3'))]
-h = re.sub(r'AUDIO=\[.*?\];', lambda m: 'AUDIO=' + json.dumps(uris) + ';', h, count=1, flags=re.S)
-img = lambda p: 'data:image/webp;base64,' + base64.b64encode(open(p, 'rb').read()).decode()
-bg = 'const BG={light:"' + img(n + '-bg-light.webp') + '",dark:"' + img(n + '-bg-dark.webp') + '"};'
-h = re.sub(r'const BG=\{.*?\};', lambda m: bg, h, count=1, flags=re.S)
-open(n + '.html', 'w', encoding='utf-8').write(h)
-```
-
-تعداد MP3 باید ۶ باشه و ترتیبشون با ترتیب بخش‌ها یکی. تم صفحه خودکار تاریک/روشن می‌شه؛ اگه وب‌ویو تم رو نمی‌رسونه: `setTheme('dark')` یا `setTheme('light')`.
-
-## ۵) متن بخش‌ها برای تولید صدا
-
-> هر بخش یک فایل صوتی. خط «لحن» فقط برای تنظیم خوانشه و خونده نمی‌شه.
+> هر بخش یک فایل صوتی است. عنوان و خط «لحن» راهنمای خواننده‌اند و خوانده نمی‌شوند.
 
 ### بخش ۱: پیش از شروع، جا گرفتن
 
@@ -76,13 +26,13 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 این تمرین یه سفر ذهنیه. قراره با کمک صدا، چند دقیقه توی یه کلبه‌ی چوبی بالای کوه پناه بگیری. جایی که بیرونش سرده و برفه، ولی داخلش گرمه و امنه. شاید قبلاً همچین جایی دیده باشی، شاید هم فقط مال خودت باشه. **[مکث ۳ ثانیه]**
 
-چیزی برای درست انجام دادن وجود نداره. امتحان نیست و هیچ‌کس هم قضاوتت نمی‌کنه. اگه تصویر توی ذهنت واضح نمی‌شه هم اشکالی نداره؛ بعضی‌ها می‌بینن، بعضی‌ها فقط حس می‌کنن. هر دو درسته. **[مکث ۳ ثانیه]**
+قرار نیست کاری رو درست یا غلط انجام بدی. این امتحان نیست و کسی هم قرار نیست قضاوتت کنه. اگه تصویر توی ذهنت واضح نمی‌شه هم اشکالی نداره؛ بعضی‌ها می‌بینن، بعضی‌ها فقط حس می‌کنن. هر دو درسته. **[مکث ۳ ثانیه]**
 
 یه چیز جالب هم بگم. یه نظریه‌ی قدیمی تو روان‌شناسی محیط هست به اسم «چشم‌انداز و پناهگاه». می‌گه آدم‌ها معمولاً جاهایی رو دوست دارن که هم بتونن بیرون رو ببینن، هم خودشون یه جای محافظت‌شده باشن. یه کلبه با یه پنجره‌ی بزرگ دقیقاً همینه. **[مکث ۳ ثانیه]**
 
 حالا یه جای راحت پیدا کن. اگه نشستی، تکیه بده و کف پاها رو روی زمین بذار. اگه دراز کشیدی، زیر زانوهات یه چیزی بذار. **[مکث ۴ ثانیه]**
 
-اگه راحته، چشم‌هات رو آروم ببند. اگه نه، نگاهت رو یه جای پایین، روی زمین، نرم کن. **[مکث ۴ ثانیه]**
+اگه راحتی، چشم‌هات رو ببند. اگه ترجیح می‌دی باز بمونن، نگاهت رو روی یه نقطه‌ی ساده از زمین یا میز نگه دار؛ لازم نیست بهش خیره بشی. **[مکث ۴ ثانیه]**
 
 شونه‌ها رو یه بار تا نزدیک گوش‌ها بالا بیار. **[مکث ۲ ثانیه]** و با یه بازدم بلند ول کن. **[مکث ۵ ثانیه]**
 
@@ -174,7 +124,7 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 گرمای آتش رو روی پوستت حس کن. صورتت، دست‌هات، پاهات. بدنت داره آروم‌آروم یاد می‌گیره که اینجا سرما نیست و خطری هم نیست. **[مکث ۱۲ ثانیه]**
 
-با هر بازدم، یه کم از سنگینی روز می‌ره توی پتو و صندلی. اونا نگهش می‌دارن. تو لازم نیست. **[مکث ۱۲ ثانیه]**
+با هر بازدم، تصور کن کمی از سنگینی روز رو روی پتو یا صندلی می‌ذاری؛ لازم نیست همه‌ش رو خودت نگه داری. **[مکث ۱۲ ثانیه]**
 
 یه نفس عمیق دیگه. **[مکث ۳ ثانیه]** دم، **[مکث ۵ ثانیه]** و بازدم. **[مکث ۱۲ ثانیه]**
 
@@ -230,26 +180,16 @@ open(n + '.html', 'w', encoding='utf-8').write(h)
 
 انگشت‌های دست و پا رو یه کم تکون بده. **[مکث ۴ ثانیه]** شونه‌ها رو آروم بچرخون. **[مکث ۴ ثانیه]** اگه دوست داری، یه کش و قوس به بدنت بده. **[مکث ۶ ثانیه]**
 
-به صداهای واقعی اتاق گوش کن. **[مکث ۴ ثانیه]** به هوایی که دور و برته. **[مکث ۵ ثانیه]**
+به صداهای واقعی اتاق گوش بده. **[مکث ۴ ثانیه]** به هوایی که دور و برته. **[مکث ۵ ثانیه]**
 
-هر وقت آماده بودی، چشم‌هات رو باز کن. اگه هنوز بازن، فقط نگاهت رو برگردون به اتاق. **[مکث ۶ ثانیه]**
+هر وقت آماده بودی، چشم‌هات رو باز کن. اگه از قبل باز بودن، فقط توجهت رو به اتاق برگردون. **[مکث ۶ ثانیه]**
 
 و اگه لازم داشتی، چند ثانیه‌ی دیگه همین‌جا بمون و بعد بلند شو. **[مکث ۵ ثانیه]**
 
-یه نکته‌ی کوچیک برای بعد: لازم نیست هر دفعه بیست دقیقه وقت بذاری. تو روزهای شلوغ، همین‌قدر که چشم ببندی، سه تا نفس آروم بکشی و صدای آتش رو تو ذهنت بیاری، دو دقیقه کافیه. **[مکث ۵ ثانیه]**
+وقتی روز شلوغه، چند لحظه تصویر پنجره‌ی کلبه و صدای آتش رو به یاد بیار و سه نفس راحت بکش. **[مکث ۵ ثانیه]**
 
-اگه بعد از تمرین حس کردی بیشتر نگران یا بی‌قرار شدی، نگران نباش، این هم گاهی پیش می‌آد. تمرین رو کنار بذار، یه کم راه برو یا آب بخور. و اگه این حس ادامه پیدا کرد، با یه متخصص سلامت روان صحبت کن. **[مکث ۵ ثانیه]**
+اگه بعد از تمرین حس کردی بیشتر نگران یا بی‌قرار شدی، نگران نباش، این هم گاهی پیش می‌آد. تمرین رو کنار بذار، یه کم راه برو یا آب بخور. **[مکث ۵ ثانیه]**
 
 ممنون که این چند دقیقه رو به خودت دادی. **[مکث ۳ ثانیه]**
 
-روز خوبی داشته باشی. **[مکث ۳ ثانیه]**
-
-## ۶) یادداشت ایمنی و منابع علمی (برای اپ؛ داخل صفحه‌ی صوتی نمایش داده نمی‌شه)
-
-- **ایمنی:** این تمرین رو موقع رانندگی یا کار با ماشین‌آلات گوش نده. اگه وسط تمرین تصویر ناخوشایندی اومد، چشم‌هات رو باز کن، به اتاق واقعی نگاه کن و هر وقت خواستی ادامه بده یا متوقف کن. اگه سرما یا برف براتت خاطره‌ی بدی داره، به‌جاش یه اتاق گرم و امن دیگه تصور کن. این تمرین جایگزین درمان نیست.
-- Appleton, J. (1975). The Experience of Landscape. London: Wiley. (نظریه‌ی چشم‌انداز و پناهگاه)
-- Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182.
-- Bratman, G. N., Hamilton, J. P., Hahn, K. S., Daily, G. C., & Gross, J. J. (2015). Nature experience reduces rumination and subgenual prefrontal cortex activation. PNAS, 112(28), 8567–8572.
-- Holmes, E. A., & Mathews, A. (2010). Mental imagery in emotion and emotional disorders. Clinical Psychology Review, 30(3), 349–362.
-- Zaccaro, A., et al. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.
-- NCCIH (NIH). Relaxation Techniques: What You Need To Know. https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
+امیدوارم ادامه‌ی روزت آروم بگذره. **[مکث ۳ ثانیه]**
