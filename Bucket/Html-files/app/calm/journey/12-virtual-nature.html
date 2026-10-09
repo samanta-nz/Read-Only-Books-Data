@@ -307,7 +307,7 @@ footer strong{color:var(--fg);font-size:11.5px}
 </main>
 
 <script>
-const SCENE="fireflies".split("+");
+const SCENE="mist".split("+");
 const AUDIO=[];
 const FA="۰۱۲۳۴۵۶۷۸۹",fa=s=>String(s).replace(/[0-9]/g,d=>FA[d]);
 const tf=s=>{s=Math.max(0,Math.floor(s||0));const m=Math.floor(s/60);return fa(m)+":"+fa(String(s%60).padStart(2,"0"))};
@@ -442,7 +442,7 @@ const SC={
  fireflies(){
   const p=mk(45,()=>({x:R(0,1),y:R(.1,1),r:R(1.8,4.5),s:R(.02,.08),ph:R(0,6.3),a:R(.3,.95)}));
   return(t)=>{p.forEach(o=>{
-   const x=(o.x+Math.sin(t*o.s+o.ph)*.06)*W,y=(o.y+Math.cos(t*o.s*1.2+o.ph)*.05)*H,g=(Math.sin(t*.7+o.ph)*.5+.5)*o.a+.15,R2=o.r*8;
+   const x=(o.x+Math.sin(t*o.s+o.ph)*.06)*W,y=(o.y+Math.cos(t*o.s*1.2+o.ph)*.05)*H,g=((Math.sin(t*.7+o.ph)*.5+.5)*o.a+.15)*.85,R2=o.r*8;
    const gr=cx.createRadialGradient(x,y,0,x,y,R2);gr.addColorStop(0,`rgba(${C1},${g})`);gr.addColorStop(1,`rgba(${C1},0)`);cx.fillStyle=gr;cx.fillRect(x-R2,y-R2,R2*2,R2*2);
   })}},
  mist(){
@@ -469,7 +469,7 @@ const SC={
    m.addColorStop(0,"rgba(0,0,0,.25)");m.addColorStop(.2,"rgba(0,0,0,.45)");m.addColorStop(.45,"rgba(0,0,0,.6)");
    m.addColorStop(.6,"rgba(0,0,0,.45)");m.addColorStop(.76,"rgba(0,0,0,0)");m.addColorStop(1,"rgba(0,0,0,0)");
    bx.fillStyle=m;bx.fillRect(0,0,W,H);bx.globalCompositeOperation="source-over";
-   cx.drawImage(buf,0,0,W,H);
+   cx.save();cx.globalAlpha*=.85;cx.drawImage(buf,0,0,W,H);cx.restore();
   };
  },
  water(){
