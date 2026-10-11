@@ -120,5 +120,8 @@
 ### منابع عمومی و ملاحظات ایمنی
 
 - National Center for Complementary and Integrative Health (NCCIH), “Hypnosis” — شواهد هیپنوتیزم به موضوع وابسته‌اند و برای بسیاری از کاربردها قطعی نیستند: https://www.nccih.nih.gov/health/hypnosis
+- U.S. Department of Veterans Affairs, Whole Health, “Clinical Hypnosis” — چارچوب کاربرد بالینی و شیوه‌ی استفاده‌ی مسئولانه: https://www.va.gov/WHOLEHEALTH/CIH/clinical_hypnosis.asp
+- “Guidelines for the Assessment of Efficacy of Clinical Hypnosis Applications” — راهنمای ارزیابی شواهد و کیفیت مطالعات: https://pubmed.ncbi.nlm.nih.gov/35316157/
+- “Best practice guidelines for clinical hypnosis trials” — ملاحظات طراحی و گزارش‌دهی پژوهش‌های هیپنوتیزم: https://pmc.ncbi.nlm.nih.gov/articles/PMC11483803/
 - NCCIH, “Relaxation Techniques: What You Need To Know”: https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know
 - NHS, “Breathing exercises for stress”: https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/
