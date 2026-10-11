@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#1b2034">
-<!-- key: 05-river-boat | app id: cj-05 | audience: all | parts: 6 | audio: none yet (built without audio) | background: embedded JPEG (light overlay in CSS) -->
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#eef0f8">
+<!-- key: health-sleep-body-01 | app id: health-sleep-body-01 | audience: all | parts: 6 | audio: none yet (built without audio) | shared template with content-specific palette and central orb -->
 <title>آرام‌سازی بدنی قبل خواب</title>
 <style>
 :root{
  color-scheme:light;
- --hi:255,255,255;--ts:255,255,255;--sh:110,128,150;
- --bg1:#edf6f8;--bg2:#ece0ca;--fg:#1b373c;--mut:#566c71;
- --accent:#c78b23;--accent2:#238695;--fx1:199, 139, 35;--fx2:35, 134, 149;
- --card:rgba(255, 255, 255, 0.45);--bd:rgba(199, 139, 35, 0.28);--bg-ov:rgba(237, 246, 248, 0.65);--surface:rgba(236, 235, 225, 0.78);--line:rgba(199, 139, 35, 0.2);
- --disc-bg:radial-gradient(circle at 35% 30%, rgba(var(--hi),.14), rgba(199, 139, 35, .16) 60%, rgba(var(--sh),.35));
- --disc-bd:rgba(var(--hi),.2);--disc-glow:rgba(199, 139, 35, .25);
+ --hi:255,255,255;--ts:255,255,255;--sh:119,127,153;
+ --bg1:#eef0f8;--bg2:#e0e5f0;--fg:#293047;--mut:#657087;
+ --accent:#8579b7;--accent2:#63a6ae;--fx1:133,121,183;--fx2:99,166,174;
+ --card:rgba(255,255,255,.45);--bd:rgba(133,121,183,.28);--bg-ov:rgba(133,121,183,.065);--surface:rgba(99,166,174,.12);--line:rgba(133,121,183,.2);
+ --disc-bg:radial-gradient(circle at 35% 30%,rgba(var(--hi),.14),rgba(133,121,183,.16) 60%,rgba(var(--sh),.35));
+ --disc-bd:rgba(var(--hi),.2);--disc-glow:rgba(133,121,183,.25);
 }
 
 *{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
@@ -181,12 +181,12 @@ footer strong{color:var(--fg);font-size:11.5px}
 }
 
 /* Theme-specific illustration; narration stays in the paired Markdown script. */
-:root{color-scheme:dark;--hi:244,241,255;--ts:235,230,255;--sh:17,22,39;--bg1:#151a2c;--bg2:#2b3350;--fg:#eef1fb;--mut:#b6bfd6;--accent:#b3a4e6;--accent2:#87b8c5;--fx1:179,164,230;--fx2:135,184,197;--card:rgba(34,42,66,.68);--bd:rgba(179,164,230,.28);--bg-ov:rgba(21,26,44,.25);--surface:rgba(39,48,72,.85);--line:rgba(179,164,230,.18);--disc-bg:radial-gradient(circle at 35% 30%,rgba(244,241,255,.18),rgba(135,184,197,.12) 60%,rgba(17,22,39,.5));--disc-bd:rgba(235,230,255,.25);--disc-glow:rgba(135,184,197,.24);}
+:root{color-scheme:light;--hi:255,255,255;--ts:255,255,255;--sh:49,96,108;--bg1:#eaf5f8;--bg2:#cee7ed;--fg:#1d3e49;--mut:#58757d;--accent:#398ca0;--accent2:#80bcb4;--fx1:57,140,160;--fx2:128,188,180;--card:rgba(255,255,255,.58);--bd:rgba(57,140,160,.28);--bg-ov:rgba(234,245,248,.38);--surface:rgba(222,240,242,.82);--line:rgba(57,140,160,.2);--disc-bg:radial-gradient(circle at 35% 30%,rgba(255,255,255,.23),rgba(57,140,160,.14) 60%,rgba(49,96,108,.3));--disc-bd:rgba(255,255,255,.25);--disc-glow:rgba(57,140,160,.24);}
 .artwork{position:absolute;inset:0;border-radius:50%;pointer-events:none;opacity:.96;background:radial-gradient(circle at 50% 16%,rgba(var(--fx1),.22),transparent 35%),radial-gradient(circle at 15% 70%,rgba(var(--fx2),.14),transparent 38%),radial-gradient(circle at 85% 70%,rgba(var(--fx1),.12),transparent 38%)}
 .artwork::before,.artwork::after{content:"";position:absolute;display:block;pointer-events:none}
-.theme-sleepbody .artwork::before{inset:5%;border:1px solid var(--bd);border-radius:50%;box-shadow:inset 0 0 30px rgba(var(--fx1),.09),0 0 30px rgba(var(--fx2),.08)}
-.theme-sleepbody .artwork::after{inset:13%;border:1px dashed rgba(var(--fx2),.28);border-radius:50%;transform:rotate(-16deg)}
-.theme-sleepbody .artwork{background-image:radial-gradient(circle at 50% 16%,rgba(var(--fx1),.24),transparent 32%),radial-gradient(circle at 15% 70%,rgba(var(--fx2),.14),transparent 38%),radial-gradient(circle at 85% 70%,rgba(var(--fx1),.12),transparent 38%)}
+.theme-breath .artwork::before{inset:5%;border:1px solid var(--bd);border-radius:50%;box-shadow:inset 0 0 30px rgba(var(--fx1),.09),0 0 30px rgba(var(--fx2),.08)}
+.theme-breath .artwork::after{inset:13%;border:1px dashed rgba(var(--fx2),.28);border-radius:50%;transform:rotate(-16deg)}
+.theme-breath .artwork{background-image:radial-gradient(circle at 50% 16%,rgba(var(--fx1),.24),transparent 32%),radial-gradient(circle at 15% 70%,rgba(var(--fx2),.14),transparent 38%),radial-gradient(circle at 85% 70%,rgba(var(--fx1),.12),transparent 38%)}
 .theme-full .artwork::before{inset:8% 16%;border-radius:48% 48% 42% 42%;border-top:2px solid rgba(var(--fx1),.38);border-bottom:2px solid rgba(var(--fx2),.28);box-shadow:0 0 0 10px rgba(var(--fx1),.025),0 0 0 22px rgba(var(--fx2),.025)}
 .theme-full .artwork::after{inset:25% 8%;border-radius:50%;border-style:solid;border-color:rgba(var(--fx2),.17);transform:rotate(24deg)}
 .theme-short .artwork::before{inset:27% 5%;border-radius:50%;border:2px solid rgba(var(--fx1),.23);box-shadow:0 0 0 15px rgba(var(--fx2),.055)}
@@ -204,6 +204,10 @@ footer strong{color:var(--fg);font-size:11.5px}
 @keyframes artDrift{0%{filter:saturate(.9);transform:scale(.98)}100%{filter:saturate(1.08);transform:scale(1.025)}}
 @media(prefers-reduced-motion:reduce){.playing .artwork{animation:none!important}}
 
+.zen-ring.theme-sleepbody-relaxation .zen-disc{border-radius:48% 52% 58% 42% / 42% 42% 58% 58%}
+.zen-ring.theme-sleepbody-relaxation .artwork{background-image:radial-gradient(ellipse at 50% 18%,rgba(var(--fx1),.24),transparent 38%),radial-gradient(ellipse at 28% 72%,rgba(var(--fx2),.17),transparent 36%),radial-gradient(ellipse at 76% 70%,rgba(var(--fx1),.13),transparent 38%)}
+.zen-ring.theme-sleepbody-relaxation .artwork::before{inset:7% 27% 12%;border:1px solid var(--bd);border-radius:50% 50% 43% 57%;box-shadow:0 0 0 12px rgba(var(--fx2),.04),0 0 0 25px rgba(var(--fx1),.035)}
+.zen-ring.theme-sleepbody-relaxation .artwork::after{inset:15% 9% 18%;border:1px solid rgba(var(--fx2),.3);border-radius:50%;transform:rotate(-23deg)}
 </style>
 </head>
 <body>
@@ -213,21 +217,21 @@ footer strong{color:var(--fg);font-size:11.5px}
 <main>
  <header>
   <div class="heading">
-   <div class="eyebrow"><i></i>آماده‌سازی خواب / ۱</div>
+   <div class="eyebrow"><i></i>خواب آرام / رهاکردن تنش بدن</div>
    <h1>آرام‌سازی بدنی قبل خواب</h1>
-   <div class="english" lang="en" dir="ltr">Pre-Sleep Body Relaxation</div>
-   <p>۶ بخش شبانه · اسکن بدن و استراحت بدون اجبار</p>
+   <div class="english" lang="en" dir="ltr">Pre-sleep Body Relaxation</div>
+   <p>۶ بخش صوتی · توجه به بدن، بدون اجبار به آرام‌شدن</p>
   </div>
   <div class="brand header-brand">همیار من <span class="tag" lang="en" dir="ltr">HAMYAR E MAN</span></div>
  </header>
 
  <div class="stage">
-  <div class="zen-ring theme-sleepbody" id="zenRing" aria-label="آرام‌سازی بدنی قبل خواب">
+  <div class="zen-ring theme-sleepbody-relaxation" id="zenRing" aria-label="آرام‌سازی بدنی قبل خواب">
    <div class="artwork" aria-hidden="true"></div>
    <div class="zen-disc" aria-hidden="true">
     <div class="disc-core">
      <span class="disc-icon">☾</span>
-     <span class="disc-status" id="discStatus">بدن در زمان استراحت</span>
+     <span class="disc-status" id="discStatus">توجه به بدن، بدون اجبار به آرام‌شدن</span>
     </div>
    </div>
   </div>
@@ -288,14 +292,14 @@ footer strong{color:var(--fg);font-size:11.5px}
 </main>
 
 <script>
-const SCENE="mist+bokeh".split("+");
-const AUDIO=[]; // Attach six public MP3 URLs only after files are generated and uploaded (01-pre-sleep-body-relaxation-01.mp3 تا 01-pre-sleep-body-relaxation-06.mp3).
+const SCENE="waves+mist".split("+");
+const AUDIO=[]; // Six MP3 URLs for health-sleep-body-01 will be connected after the voice files are generated and hosted.
 const FA="۰۱۲۳۴۵۶۷۸۹",fa=s=>String(s).replace(/[0-9]/g,d=>FA[d]);
 const tf=s=>{s=Math.max(0,Math.floor(s||0));const m=Math.floor(s/60);return fa(m)+":"+fa(String(s%60).padStart(2,"0"))};
-const $=id=>document.getElementById(id),NAME="01-pre-sleep-body-relaxation",KEY="lp_"+NAME;
+const $=id=>document.getElementById(id),NAME="health-sleep-body-01",KEY="lp_"+NAME;
 const st={g(k,d){try{const v=localStorage.getItem(KEY+"_"+k);return v===null?d:v}catch(e){return d}},s(k,v){try{localStorage.setItem(KEY+"_"+k,v)}catch(e){}}};
 
-const PART_TITLES=["بخش ۱: رسیدن به شب","بخش ۲: تماس و وزن بدن","بخش ۳: صورت و شانه‌ها","بخش ۴: دست‌ها، سینه و شکم","بخش ۵: پاها و رهاکردن تلاش","بخش ۶: استراحت بدون اجبار"];
+const PART_TITLES=["رسیدن به شب","تماس و وزن بدن","صورت و شانه‌ها","دست‌ها، سینه و شکم","پاها و رهاکردن تلاش","استراحت بدون اجبار"];
 
 const ready=AUDIO.length>0&&AUDIO.every(Boolean);
 const P=AUDIO.map(src=>{const a=new Audio();a.preload="metadata";if(src)a.src=src;return a});
