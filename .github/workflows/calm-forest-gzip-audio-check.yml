@@ -1,0 +1,136 @@
+name: Temporary calm-forest gzip and audio comparison
+
+on:
+  push:
+    branches:
+      - scratch/calm-forest-gzip-audio-check
+
+permissions:
+  contents: read
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download source HTML and prepare outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          mkdir -p output/audio
+          curl -fL --retry 3 --retry-delay 2 \
+            "https://c539776.parspack.net/Bucket/Html-files/app/calm/journey/01-calm-forest.html" \
+            -o output/01-calm-forest.html
+          python3 - <<'PY'
+          import base64, gzip, hashlib, json, pathlib, re
+          from collections import Counter
+          root = pathlib.Path("output")
+          html_path = root / "01-calm-forest.html"
+          raw = html_path.read_bytes()
+          (root / "01-calm-forest.html.gz").write_bytes(gzip.compress(raw, compresslevel=9, mtime=0))
+          pattern = re.compile(rb"""data:([^;,"'\s]+);base64,([A-Za-z0-9+/=\r\n]+)""")
+          counts = Counter()
+          extracted = []
+          index = 0
+          for match in pattern.finditer(raw):
+              mime = match.group(1).decode("ascii", "replace").lower()
+              payload = re.sub(rb"\s+", b"", match.group(2))
+              decoded = base64.b64decode(payload, validate=True)
+              index += 1
+              suffix = ".mp3" if mime == "audio/mpeg" else (".jpg" if mime == "image/jpeg" else ".bin")
+              if mime.startswith("audio/"):
+                  audio_index = sum(1 for item in extracted if item["mime"].startswith("audio/")) + 1
+                  name = f"audio/track-{audio_index:02d}{suffix}"
+              elif mime == "image/jpeg":
+                  name = "audio/embedded-cover.jpg"
+              else:
+                  name = f"audio/embedded-{index:02d}{suffix}"
+              path = root / name
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_bytes(decoded)
+              info = {
+                  "mime": mime, "file": name, "base64_chars": len(payload),
+                  "decoded_bytes": len(decoded), "sha256": hashlib.sha256(decoded).hexdigest()
+              }
+              extracted.append(info)
+              counts[mime] += 1
+          report = {
+              "source": html_path.name,
+              "source_bytes": len(raw),
+              "gzip_bytes": (root / "01-calm-forest.html.gz").stat().st_size,
+              "gzip_saving_bytes": len(raw) - (root / "01-calm-forest.html.gz").stat().st_size,
+              "gzip_saving_percent": round(100 * (len(raw) - (root / "01-calm-forest.html.gz").stat().st_size) / len(raw), 3),
+              "html_sha256": hashlib.sha256(raw).hexdigest(),
+              "data_uri_count": len(extracted),
+              "data_uri_mime_counts": dict(counts),
+              "embedded_assets": extracted,
+          }
+          (root / "extraction-report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          PY
+      - name: Inspect audio and transcode one podcast sample
+        shell: bash
+        run: |
+          set -euo pipefail
+          for f in output/audio/track-*.mp3; do
+            [ -f "$f" ] || continue
+            echo "===== $f ====="
+            ffprobe -v error -show_entries format=duration,size,bit_rate:stream=codec_name,sample_rate,channels,bit_rate -of json "$f"
+          done
+          first="output/audio/track-01.mp3"
+          test -s "$first"
+          ffmpeg -hide_banner -y -i "$first" -map_metadata -1 -vn -c:a libopus -b:a 48k -vbr on -compression_level 10 "output/audio/track-01-opus-48k.ogg"
+          ffmpeg -hide_banner -y -i "$first" -map_metadata -1 -vn -c:a aac -b:a 64k -movflags +faststart "output/audio/track-01-aac-64k.m4a"
+          ffprobe -v error -show_entries format=duration,size,bit_rate:stream=codec_name,sample_rate,channels,bit_rate -of json "output/audio/track-01-opus-48k.ogg" > output/audio/track-01-opus-48k.ffprobe.json
+          ffprobe -v error -show_entries format=duration,size,bit_rate:stream=codec_name,sample_rate,channels,bit_rate -of json "output/audio/track-01-aac-64k.m4a" > output/audio/track-01-aac-64k.ffprobe.json
+          python3 - <<'PY'
+          import json, pathlib, subprocess
+          root = pathlib.Path("output")
+          report = json.loads((root / "extraction-report.json").read_text(encoding="utf-8"))
+          def probe(path):
+              return json.loads(subprocess.check_output([
+                  "ffprobe", "-v", "error", "-show_entries",
+                  "format=duration,size,bit_rate:stream=codec_name,sample_rate,channels,bit_rate",
+                  "-of", "json", str(path)
+              ]))
+          files = {
+              "source_mp3": root / "audio/track-01.mp3",
+              "opus_48k": root / "audio/track-01-opus-48k.ogg",
+              "aac_64k": root / "audio/track-01-aac-64k.m4a",
+          }
+          audio = {}
+          for name, path in files.items():
+              audio[name] = {"file": str(path.relative_to(root)), "bytes": path.stat().st_size, "probe": probe(path)}
+          source_size = audio["source_mp3"]["bytes"]
+          for name, info in audio.items():
+              info["saving_vs_source_percent"] = round(100 * (source_size - info["bytes"]) / source_size, 2)
+          report["audio_sample_comparison"] = audio
+          (root / "comparison-report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+          lines = [
+              "# Calm forest HTML and audio compression comparison", "",
+              f"- Original HTML: {report['source_bytes']:,} bytes",
+              f"- GZIP level 9 HTML: {report['gzip_bytes']:,} bytes",
+              f"- GZIP savings: {report['gzip_saving_bytes']:,} bytes ({report['gzip_saving_percent']}%)",
+              f"- Inline data URIs: {report['data_uri_count']} ({report['data_uri_mime_counts']})", "",
+              "| Audio file | Bytes | Codec | Sample rate | Channels | Saving vs source MP3 |",
+              "|---|---:|---|---:|---:|---:|"
+          ]
+          for name, info in audio.items():
+              stream = (info["probe"].get("streams") or [{}])[0]
+              fmt = info["probe"].get("format", {})
+              codec = stream.get("codec_name", "?")
+              sr = stream.get("sample_rate", "?")
+              ch = stream.get("channels", "?")
+              lines.append(f"| {info['file']} | {info['bytes']:,} | {codec} | {sr} | {ch} | {info['saving_vs_source_percent']}% |")
+          lines += ["", "Note: re-encoding a lossy MP3 to Opus/AAC is a new lossy generation; listen to the sample before using the setting for all tracks.", ""]
+          (root / "comparison-report.md").write_text("\n".join(lines), encoding="utf-8")
+          print("\n".join(lines))
+          PY
+      - name: Upload comparison files
+        uses: actions/upload-artifact@v4
+        with:
+          name: calm-forest-gzip-audio-comparison
+          path: output/
+          if-no-files-found: error
+          retention-days: 7
